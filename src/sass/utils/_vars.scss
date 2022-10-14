@@ -1,0 +1,39 @@
+:root {
+    /* fonts */
+    --main-font: Montserrat, sans-serif;
+    --secondary-font: Seymour+One, sans-serif;
+
+    /* text color */
+    --primary-text-color: #131313;
+    --txt-color-light: #FCFCFC;
+    --txt-color-light-alt: #ABABAB;
+
+    /* colors */
+    --main-color: #84A178;
+    --rose-color: #D6936D;
+    --accent-color: #F8D24E;
+    --primary-white-color: #FCFCFC;
+    --footer-copyright-color: #7A7A7A;
+    --composition-main-color: #9CBE8F;
+
+    /* mobile-menu */
+    --mobile-bg: #85A279;
+    --tablet-bg: #97AF8D;
+
+    /* modal */
+    --modal-bg: #FCFCFC;
+
+    /* border-divider */
+    --border-main-color: #E1E1E1;
+
+    /*product-cards*/
+    --milkshakes-bg-color: #D6936D;
+    --ice-cream-bg-color: #AEC6A5;
+    --ice-coffe-bg-color: #EFD478;
+
+    //--primary-white-color: #FCFCFC;
+    --time-text-color: #ABABAB;
+
+    /* transition */
+    --trans-effect: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

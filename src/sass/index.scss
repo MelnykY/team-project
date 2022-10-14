@@ -1,2 +1,34 @@
 @import './common';
-@import './example';
+// U T I L S
+@import './utils/mixins';
+@import './utils/vars';
+@import './utils/visually-hidden';
+// B A S E
+@import './base/base';
+@import './base/reset';
+@import './base/container';
+@import './base/section';
+// C O M P O N E N T S
+@import './components/logo';
+@import './components/buttons';
+@import './components/coursor';
+@import './components/navigation';
+@import './components/form';
+@import './components/title';
+@import './components/socials';
+@import './components/backdrop';
+@import './components/mobile-menu';
+@import './components/modal-buy-now';
+@import './components/modal-franchise';
+@import './components/modal-ingridients';
+@import './components/modal-location';
+@import './components/modal-read-more';
+// L A Y O U T
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/products';
+@import './layouts/about';
+@import './layouts/gallery';
+@import './layouts/reviews';
+@import './layouts/contacts';
+@import './layouts/footer';
