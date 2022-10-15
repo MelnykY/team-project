@@ -1,11 +1,23 @@
+<div class="backdrop is-hidden"data-locations>
 <div class="locations">
-    <button class="modal__close" type="button">
+    <button class="modal__close" type="button"data-locations-close>
     <svg 
     width="16"
      height="16" >
         <use class="modal__icon--close" href="./images/sprite.svg#icon-close"></use>
     </svg>
     </button>
-    <h2 class="title locations__title">Our Locations</h2>
-    <a  class="locations__link" href="">Open map</a>
+    <h2 class="title--modal locations__title">Our Locations</h2>
+   <iframe 
+   width="100%" 
+   frameborder="0" 
+  src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=ice cream&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+</iframe>
+<button class="locations__button" type="button" >
+    <a  
+    target="_blank"
+    class="link locations__link" 
+    href="https://goo.gl/maps/mJWdQGqTAiSEigw98">Open map</a>
+    </button>
+</div>
 </div>
