@@ -19,7 +19,7 @@
     }
 }
 .footer__text-main{
-    display: inline-block;
+    
     width: 232px;
     margin-right: 0px;
     margin-bottom: 16px;
@@ -30,6 +30,7 @@
     line-height: 22px;
     text-transform: uppercase;
     @media screen and (min-width: 768px){
+        display: inline-block;
         width: 352px;
         margin-bottom: 9px;
         font-size: 26px;
@@ -46,7 +47,7 @@
 }
     
 .footer__text-accent{
-    display: inline-block;
+    
     width: 200px;
     color: var(--primary-white-color);
     font-style: normal;
@@ -56,6 +57,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     @media screen and (min-width: 768px){
+        display: inline-block;
         width: 340px;
         font-size: 48px;
         line-height: 59px;
