@@ -1,9 +1,9 @@
 .advantages__list {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 27px;
     padding-top: 42px;
-    padding-bottom: 36px;
+    padding-bottom: 60px;
 }
 
 .advantages__amount {
@@ -31,13 +31,8 @@
 }
 .advantages__img {
     width: 50px;
+    display: block;
+    margin: 0 auto;
 
-    padding-bottom: 16px;
-}
-
-.advantages__item {
-        display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+    margin-bottom: 16px;
 }
