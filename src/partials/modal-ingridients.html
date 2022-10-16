@@ -1,6 +1,6 @@
-<div class="backdrop is-hidden">
+<div class="backdrop is-hidden"data-ingrediens>
 <div class="ingrediens">
-    <button class="modal__close" type="button">
+    <button class="modal__close" type="button"data-ingrediens-close>
     <svg 
     width="16"
      height="16" >
@@ -67,22 +67,23 @@
       <label class="ingrediens__label">
          <input 
          class="ingrediens__input" 
-         type="tel" 
-         name="tel">
+         type="text"
+          name="user-name" 
+          placeholder="Name">
          <input 
-         class="ingrediens__input" 
-         type="email"
-          name="email" >
+          class="ingrediens__input" 
+         type="tel" 
+         name="tel"
+         placeholder="Phone">
     </label>  
-    <label class="ingrediens__label">
-     <textarea 
-     class="ingrediens__textarea" 
-     name="textarea_modal"
-      id="" 
-      rows="5"
-       placeholder="Введіть текст">
-    </textarea>
-     </label>
+    <label class="ingrediens__label ">
+                  <textarea 
+                  class="ingrediens__textarea" 
+                  name="modal-textarea" 
+                  id="" 
+                  rows="5" 
+                  placeholder=" Comment"></textarea>
+                </label>
      </form>
       <button class="ingrediens__btn" type="submit">Submit</button>
       
