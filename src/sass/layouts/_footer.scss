@@ -19,6 +19,7 @@
     }
 }
 .footer__text-main{
+    display: inline-block;
     width: 232px;
     margin-right: 0px;
     margin-bottom: 16px;
@@ -45,6 +46,7 @@
 }
     
 .footer__text-accent{
+    display: inline-block;
     width: 200px;
     color: var(--primary-white-color);
     font-style: normal;

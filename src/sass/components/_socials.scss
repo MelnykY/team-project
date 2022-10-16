@@ -14,6 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 30px;
     &__icon-social{
     width: 19px;
     height: 19px;
@@ -31,9 +32,7 @@
         width: 34px;
         height: 34px;
     }
-    &:not(:last-child){
-    margin-right: 28px;
-    }
+    
 }
 
 .join__link{
