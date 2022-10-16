@@ -6,7 +6,7 @@ $('.slider').slick({
     speed:1000,
     easing:'ease',
     autoplay:true,
-    autoplaySpeed:5000,
+    autoplaySpeed:30000,
     waitForAnimate:false
 });
 });
