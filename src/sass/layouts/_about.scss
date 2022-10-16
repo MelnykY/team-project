@@ -1,0 +1,121 @@
+.about {
+  padding-top: 60px;
+}
+
+.about__subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  text-align: center;
+  color: var(--txt-color-light);
+  margin-bottom: 12px;
+}
+
+.about__title {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: calc(38 / 30);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--txt-color-light);
+  margin-bottom: 32px;
+}
+
+.about__thumb {
+  position: relative;
+  width: 278px;
+  height: 278px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 62px;
+  border-radius: 140px;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+}
+
+.about__img {
+  position: absolute;
+  top: 22px;
+}
+
+.about__description {
+}
+
+.about__text-primary {
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(21 / 12);
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  color: var(--txt-color-light);
+}
+
+.about__text-secondary {
+  padding-left: 35px;
+  padding-right: 35px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(19 / 12);
+  text-align: center;
+  justify-content: center;
+  color: var(--txt-color-light);
+}
+
+.about__btn {
+  display: flex;
+  gap: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  height: 42px;
+  // width: 164px;
+  padding: 12px 34px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  background-color: var(--accent-color);
+
+  &:hover {
+    background-color: #0a8817;
+  }
+  &:focus {
+    background-color: #0a8817;
+    color: var(--txt-color-light);
+  }
+  &:disabled {
+    background-color: var(--time-text-color);
+  }
+}
+
+.about-list__icon {
+  fill: transparent;
+  stroke: currentColor;
+}
+
+// .about__btn-text {
+
+// }
+
+// .about__btn-text::after {
+//     content: "";
+//     display: inline-block;
+//     width: 12px;
+//     height: 12px;
+//     margin-left: 5px;
+//     background-image: url(../images/about/frame-32.png);
+
+// }
