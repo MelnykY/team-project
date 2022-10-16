@@ -1,19 +1,23 @@
+.reviews{
+  padding-bottom: 419px;
+}
+
 /* Ограничивающая оболочка */
-.slick-list {
+.reviews-slider .slick-list {
   overflow: hidden;
 }
 
 /* Лента слайдов */
-.slick-track {
+.reviews-slider .slick-track {
   display: flex;
   margin-bottom: 14px;
 }
 
-.slider {
+.reviews-slider {
   position: relative;
 }
 
-.slider .slick-arrow {
+.reviews-slider .slick-arrow {
   position: absolute;
   top: calc(50% - 30px);
   width: 90px;
@@ -24,43 +28,52 @@
   transition: opacity var(--trans-effect);
 }
 
-.slider:hover .slick-arrow,
-.slider:focus .slick-arrow {
+.reviews-slider:hover .slick-arrow,
+.reviews-slider:focus .slick-arrow {
   opacity: 0.5;
 }
 
-.slider .slick-arrow.slick-prev {
+.reviews-slider .slick-arrow.slick-prev {
   left: 0;
   background: url('../images/reviews/chevron-left.svg') left center / 30%
     no-repeat;
   border: none;
+  &:before {
+    opacity: 0;
+  }
 }
-.slider .slick-arrow.slick-next {
+
+.reviews-slider .slick-arrow.slick-next {
   right: 0;
   background: url('../images/reviews/chevron-right.svg') right center / 30%
     no-repeat;
   border: none;
+
+  &:before {
+    opacity: 0;
+  }
 }
 
 /* Точки (булиты) */
 
-.slider .slick-dots {
+.reviews-slider .slick-dots {
   padding: 0;
   margin-top: 0px;
   margin-bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  list-style: none;
 }
 
-.slider .slick-dots li {
-  list-style: none;
+.reviews-slider .slick-dots li {
+  // list-style: none;
   margin: 0 5px;
 }
 
 /* Элемент точки */
 
-.slider .slick-dots li button {
+.reviews-slider .slick-dots li button {
   width: 10px;
   height: 10px;
   padding: 0;
@@ -68,38 +81,48 @@
   border-radius: 50%;
   border: none;
   background-color: #d9d9d9;
+
+  &:before {
+    opacity: 0;
+  }
 }
 
 /* Активная точка */
 
-.slider .slick-dots li.slick-active button {
+.reviews-slider .slick-dots li.slick-active button {
   background-color: transparent;
+
+  &:before {
+    opacity: 0;
+  }
 }
 
-.slider__item {
+.reviews-slider__item {
   text-align: center;
 }
 
-.slider__image {
+.reviews-slider__image {
   margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.slider__thumb {
+.reviews-slider__thumb {
   padding: 34px 39px;
   margin-bottom: 30px;
   background-color: var(--main-color);
   border-radius: 10px;
 }
 
-.slider__text {
+.reviews-slider__text {
   display: block;
   font-size: 12px;
   line-height: 2.55;
   color: var(--txt-color-light);
 }
 
-.slider__name {
-font-weight: 500;
-font-size: 20px;
-line-height: 1.86;
+.reviews-slider__name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
 }

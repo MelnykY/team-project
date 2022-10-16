@@ -1,5 +1,5 @@
 $(document).ready(function(){
-$('.slider').slick({
+$('.reviews-slider').slick({
     arrows:true, 
     dots:true,
     adaptiveHeight:false,
