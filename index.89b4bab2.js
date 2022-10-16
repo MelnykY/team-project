@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector(".days"),n=document.querySelector(".hours"),r=document.querySelector(".minutes"),t=document.querySelector(".seconds"),o=(new Date).getFullYear(),c=new Date("December 01 ".concat(o," 00:00:00"));setInterval((function(){var o=new Date,a=c-o,u=Math.floor(a/1e3/60/60/24),l=Math.floor(a/1e3/60/60)%24,M=Math.floor(a/1e3/60)%60,i=Math.floor(a/1e3)%60;e.innerHTML=u,n.innerHTML=l<10?"0"+l:l,r.innerHTML=M<10?"0"+M:M,t.innerHTML=i<10?"0"+i:i}),1e3)}();
+//# sourceMappingURL=index.89b4bab2.js.map
