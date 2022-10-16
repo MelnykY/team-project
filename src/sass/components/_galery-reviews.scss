@@ -1,7 +1,33 @@
 .galery-reviews {
-  background-image: url('../images/backgrounds/review-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
+
+  background-image: url('../images/backgrounds/review-mobile-bkg.png');
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/backgrounds/review-mobile-bkg@2x.png');
+  }
+
+  @media screen and (min-width: 321px) {
+    background-image: url('../images/backgrounds/review-tablet-bkg.png');
+  }
+
+  @media screen and (min-width: 321px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 321px) and (min-resolution: 192dpi),
+    screen and (min-width: 321px) and (min-resolution: 2dppx) {
+    background-image: url('../images/backgrounds/review-tablet-bkg@2x.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/backgrounds/review-desktop-bkg.png');
+  }
+
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 768) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    background-image: url('../images/backgrounds/review-desktop-bkg@2x.png');
+  }
 }
