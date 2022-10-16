@@ -1,0 +1,4 @@
+/* mixin flex item */
+@mixin item($q-item, $gap) {
+  flex-basis: calc((100% - #{($q-item - 1)} * #{$gap}) / #{$q-item});
+}
