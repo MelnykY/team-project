@@ -1,0 +1,131 @@
+.products {
+  background-color: var(--primary-white-color);
+  background-image: url(../images/products/bcgr_l@1x.png);
+}
+
+.products-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products__title {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.products__main-title {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: calc(38 / 30);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 148px;
+}
+
+.products__list-item {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 420px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+
+  border-radius: 24px;
+
+  &:not(:last-child) {
+    margin-bottom: 164px;
+  }
+
+  &--ice-cream {
+    background-color: var(--ice-cream-bg-color);
+  }
+
+  &--ice-coffee {
+    background-color: var(--ice-coffe-bg-color);
+  }
+
+  &--milkshakes {
+    background-color: var(--milkshakes-bg-color);
+  }
+}
+
+// image border shadow
+.products__img-bcgr {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  margin-bottom: 20px;
+
+  &--ice-cream {
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+  }
+
+  &--ice-coffee {
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+  }
+
+  &--milkshakes {
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7),
+        rgba(213, 117, 63, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.products__img {
+  transform: translateY(-11px);
+}
+
+.products__item-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-top: -100px;
+}
+
+.products__item-info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(25 / 14);
+  letter-spacing: 0.04em;
+  margin-bottom: auto;
+}
+
+.products__item-btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  &:hover,
+  &:focus {
+    stroke: black;
+    stroke-width: 3px;
+    cursor: pointer;
+  }
+}
