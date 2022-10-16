@@ -1,6 +1,6 @@
 .products {
   background-color: var(--primary-white-color);
-  background-image: url(../images/products/bcgr-2_sm@1x.png);
+  background-image: url(../images/products/bcgr_l@1x.png);
 }
 
 .products-container {
@@ -26,9 +26,6 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 148px;
-}
-
-.products__list {
 }
 
 .products__list-item {
@@ -126,7 +123,9 @@
   border: none;
 
   &:hover,
-  :focus {
+  &:focus {
+    stroke: black;
+    stroke-width: 3px;
     cursor: pointer;
   }
 }
