@@ -1,0 +1,17 @@
+.modal__close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    width: 16px;
+    height: 16px;
+    padding: 0;
+
+    right: 8px;
+    top: 8px;
+    border: none;
+
+    background-color: var(--modal-bg);
+}
