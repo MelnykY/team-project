@@ -146,6 +146,7 @@ font-size: 14px;
 line-height: calc(18/14);
 padding: 12 34;
 border-style: none;
+transition: var(--trans-effect);
 &:hover{
     background-color: rgba(10, 136, 23, 1);
 }
@@ -172,15 +173,16 @@ font-size: 14px;
 line-height: calc(18/14);
 padding: 12 34;
 background-color: transparent;
+transition: var(--trans-effect);
 &:hover{
-    background-color: rgba(10, 136, 23, 1);
+    border: 1px solid rgba(10, 136, 23, 1);
 }
 &:focus{
-    background-color: rgba(10, 136, 23, 1);
+    border: 1px solid rgba(10, 136, 23, 1);
     color:var(--primary-white-color) ;
 }
 &:disabled{
-    background-color:var(--time-text-color);
+    border: 1px solid var(--time-text-color);
 }
 }
 .button-icon{
