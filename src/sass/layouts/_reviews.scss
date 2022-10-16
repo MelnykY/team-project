@@ -1,5 +1,11 @@
-.reviews{
+.reviews {
   padding-bottom: 419px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 428px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 240px;
+  }
 }
 
 /* Ограничивающая оболочка */
@@ -19,9 +25,9 @@
 
 .reviews-slider .slick-arrow {
   position: absolute;
-  top: calc(50% - 30px);
+  top: 50%;
   width: 90px;
-  height: 90px;
+  height: 100%;
   z-index: 10;
   font-size: 0;
   opacity: 0;
@@ -35,8 +41,11 @@
 
 .reviews-slider .slick-arrow.slick-prev {
   left: 0;
-  background: url('../images/reviews/chevron-left.svg') left center / 30%
+  background: url('../images/reviews/chevron-left.svg') left center / 60%
     no-repeat;
+  @media screen and (min-width: 768px) {
+    background-size: 100%;
+  }
   border: none;
   &:before {
     opacity: 0;
@@ -45,10 +54,12 @@
 
 .reviews-slider .slick-arrow.slick-next {
   right: 0;
-  background: url('../images/reviews/chevron-right.svg') right center / 30%
+  background: url('../images/reviews/chevron-right.svg') right center / 60%
     no-repeat;
+  @media screen and (min-width: 768px) {
+    background-size: 100%;
+  }
   border: none;
-
   &:before {
     opacity: 0;
   }
@@ -90,7 +101,7 @@
 /* Активная точка */
 
 .reviews-slider .slick-dots li.slick-active button {
-  background-color: transparent;
+  background-color: var(--main-color);
 
   &:before {
     opacity: 0;
@@ -102,14 +113,30 @@
 }
 
 .reviews-slider__image {
-  margin-bottom: 32px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 28px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+  }
 }
 
 .reviews-slider__thumb {
   padding: 34px 39px;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding: 29px 80px;
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 39px 109px;
+  }
+
   background-color: var(--main-color);
   border-radius: 10px;
 }
