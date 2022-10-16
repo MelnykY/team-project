@@ -1,5 +1,34 @@
-.svag {
-      fill: transparent;
-    stroke: black;
-  
+.gallery {
+  background-color: aliceblue;
+  padding-bottom: 80px;
+
+  &__container{  
+  position: relative;
+  height: 280px;
+    @media screen and (min-width: 768px) {
+      height: 497px;
+    }
+    @media screen and (min-width: 1200px){
+      height: 700px;
+    }
+  }
+
+  &__slider{
+    width: calc(100% - 30px);
+    position: absolute;
+    left: 15px;
+    top: -24px;
+     @media screen and (min-width: 768px) {
+      top: -164px;
+     }
+  }
+  @media screen and (min-width: 1200px) {
+      top: -92px;
+     }
+  }
+
+
+.gallery__img > img{
+  margin: 0 auto;
+  border-radius: 7px;
 }
