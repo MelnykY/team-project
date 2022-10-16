@@ -1,0 +1,43 @@
+.advantages__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 42px;
+    padding-bottom: 36px;
+}
+
+.advantages__amount {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height:calc(36/42);
+    
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    
+        color:var(--txt-color-light);
+        margin-bottom: 18px;
+}
+.advantages__text {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 170%;
+    
+        text-align: center;
+    
+    color: var(--txt-color-light);
+}
+.advantages__img {
+    width: 50px;
+
+    padding-bottom: 16px;
+}
+
+.advantages__item {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+}
