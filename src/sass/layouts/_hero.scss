@@ -13,10 +13,9 @@ padding-left: 20px;
 
 .title {
 font-family: var(--secondary-font);
-font-weight: 400;
 font-size: 26px;
 line-height: calc(33/26);
-letter-spacing: 0.04em;
+// letter-spacing: 0.04em;
 text-transform: uppercase;
 
 color: var(--txt-color-light);
@@ -24,10 +23,22 @@ color: var(--txt-color-light);
 margin-bottom: 32px;
 }
 
+.text-element {
+width: 247px;
+font-family: var(--secondary-font);
+font-size: 34px;
+line-height: calc(34 / 32);
+
+color: var(--txt-color-light);
+
+text-transform: uppercase;
+}
+
 .group-container {
 display: flex;
 padding-bottom: 20px;
 gap: 28px;
+// text-align: center;
 
 .hero-btn {
 width: 62px;
@@ -74,31 +85,31 @@ margin-left: auto;
 
 .ice-cream-img {
 position: absolute;
-top: 300px;
+top: 305px;
 left: 86px;
 }
 
 .smile-left {
 position: absolute;
-top: 350px;
+top: 355px;
 left: 110px
 }
 
 .smile-top {
 position: absolute;
-top: 305px;
+top: 310px;
 left: 155px;
 }
 
 .smile-right {
 position: absolute;
-top: 380px;
+top: 385px;
 left: 165px;   
 }
 
 .shadow {
 position: absolute;
-top: 230px;
+top: 235px;
 left: 25px;
 z-index: -2;
 }
