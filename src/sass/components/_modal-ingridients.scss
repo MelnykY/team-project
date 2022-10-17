@@ -27,7 +27,9 @@
 
     width: 280px;
     height: 990px;
+    max-height: 95vh;
     padding: 0 20px;
+    overflow-y: scroll;
     background: var(--modal-bg);
     border-radius: 10px;
     border: 2px solid var(--accent-color);

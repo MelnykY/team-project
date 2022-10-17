@@ -28,7 +28,9 @@
     align-content: center;
     width: 100%;
     max-width: 280px;
+    max-height: 95vh;
     padding: 28px 30px;
+    overflow-y: scroll;
     background-color: var(--primary-white-color);
     border: 2px solid var(--accent-color);
     border-radius: 10px;
