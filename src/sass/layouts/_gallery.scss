@@ -2,41 +2,92 @@
   padding-bottom: 80px;
 
   @media screen and (min-width: 768px) {
-      padding-bottom: 60px;
-    }
-    
-    @media screen and (min-width: 1200px){
-      padding-bottom: 128px;
-    }
+    padding-bottom: 60px;
+  }
 
-  &__container{  
-  position: relative;
-  height: 107px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 128px;
+  }
+
+  &__container {
+    position: relative;
+    height: 107px;
     @media screen and (min-width: 768px) {
       height: 163px;
     }
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1200px) {
       height: 330px;
     }
   }
 
-  &__slider{
-    width: calc(100% - 30px);
+  &__slider {
+    width: 280px;
+    height: 131px;
     position: absolute;
-    left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+    transform: translateX(-50%);
     top: -24px;
-     @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
       top: -164px;
-     }
-      @media screen and (min-width: 1200px) {
+      height: 327px;
+      width: 704px;
+    }
+    @media screen and (min-width: 1200px) {
       top: -92px;
-     }
+      height: 422px;
+      width: 1013px;
+    }
   }
- 
+
+  &__slide-mini {
+    display: flex;
+    justify-content: center;
   }
 
 
-.gallery__img > img{
+  &__picture > img {
+  display: block;
   margin: 0 auto;
   border-radius: 7px;
+  @media screen and (min-width: 768px) {
+    border-radius: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    border-radius: 24px;
+  }
 }
+
+&__picture--firs{
+  animation-name: mini-slide;
+  animation-duration: 4000ms;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+ animation-iteration-count: infinite;
+}
+
+&__picture--second{
+  animation-name: mini-slide;
+  animation-duration: 4000ms;
+  animation-timing-function: ease-out;
+  animation-direction: alternate-reverse;
+ animation-iteration-count: infinite;
+}
+}
+
+@keyframes mini-slide {
+  0% {
+    scale: 0.95;
+    opacity: 0.1;
+    transform: translateX(-1px);
+  }
+
+  100% {
+    scale: 1;
+    opacity: 1;
+    transform: translateX(1px);
+  }
+}
+
