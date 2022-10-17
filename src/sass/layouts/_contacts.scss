@@ -24,6 +24,7 @@
    @media screen and(min-width:768px){
        flex-wrap: nowrap;
        gap: 16px;
+       margin-top: -150px;
     }
 }
 .location__item{
@@ -134,12 +135,18 @@ color: var(--txt-color-light-alt);
     font-weight: 500;
     font-size: 12px;
     line-height: calc(18/12);
-    
-    
+    @media screen and(min-width:768px){
+font-size: 14px;
+line-height: calc(26/14);
+}
+    @media screen and(min-width:1200px){
+font-size: 16px;
+line-height: calc(29/16);
+}
 }
 .link-accent{
     transition: var(--trans-effect);
-&:hover,
+   &:hover,
    &:focus{
     color: var(--rose-color);
    }
