@@ -33,7 +33,7 @@
   //   align-items: center;
   //   justify-content: center;
 
-  max-height: 365px;
+  // max-height: 365px;
   max-width: 280px;
   padding: 28px;
   background: var(--modal-bg);
@@ -51,10 +51,13 @@
 }
 
 .location-wrapper__iframe {
-  margin: 0 auto;
   margin-bottom: 24px;
+  border-radius: 10px;
 }
 
+.location__iframe {
+  width: 220px;
+}
 
 .locations__button {
   font-family: inherit;
@@ -67,7 +70,6 @@
   background-color: var(--accent-color);
   border-radius: 10px;
   border: none;
-
 }
 
 .locations__link {
