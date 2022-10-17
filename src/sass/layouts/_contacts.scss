@@ -19,8 +19,8 @@
     list-style-type: none;
     padding: 0;
     margin-bottom: 32px;
-@media screen and(max-width:768px){
-    margin-top: -150%;}
+@media screen and(max-width:767px){
+    margin-top: -420px;}
    @media screen and(min-width:768px){
        flex-wrap: nowrap;
        gap: 16px;
@@ -64,27 +64,40 @@ color: var(--primary-text-color);
 margin-bottom: 8px;
 }
 .location-address{
+   
 color: var(--rose-color);
 transition: var(--trans-effect);
 &:hover,
 &:focus{
     text-decoration: underline;
 }
-    @media screen and(min-width:768px){
-       width: 173px; 
-    }
-@media screen and(min-width:1200px){
-       width: 288px; 
-    }
 }
 .address--Los-Angeles{
     width: 212px;
+    @media screen and(min-width:768px){
+       width: 158px; 
+    }
+    @media screen and(min-width:1200px){
+       width: 288px; 
+    }
 }
 .address--Chicago{
    width: 190px;
+   @media screen and(min-width:768px){
+       width: 173px; 
+    }
+    @media screen and(min-width:1200px){
+       width: 262px; 
+    }
 }
 .address--New-York{
    width: 185px;
+   @media screen and(min-width:768px){
+       width: 159px; 
+    }
+    @media screen and(min-width:1200px){
+       width: 261px; 
+    }
 }
 .location-schedule{
     padding: 24 0;
@@ -121,7 +134,18 @@ color: var(--txt-color-light-alt);
     font-weight: 500;
     font-size: 12px;
     line-height: calc(18/12);
+    
+    
 }
+.link-accent{
+    transition: var(--trans-effect);
+&:hover,
+   &:focus{
+    color: var(--rose-color);
+   }
+}
+
+
 .local-button{
     display: flex;
    flex-direction: column;
