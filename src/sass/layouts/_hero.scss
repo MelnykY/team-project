@@ -13,15 +13,25 @@ padding-left: 20px;
 
 .title {
 font-family: var(--secondary-font);
-font-weight: 400;
 font-size: 26px;
 line-height: calc(33/26);
-letter-spacing: 0.04em;
+// letter-spacing: 0.04em;
 text-transform: uppercase;
 
 color: var(--txt-color-light);
 
 margin-bottom: 32px;
+}
+
+.text-element {
+width: 247px;
+font-family: var(--secondary-font);
+font-size: 34px;
+line-height: calc(34 / 32);
+
+color: var(--txt-color-light);
+
+text-transform: uppercase;
 }
 
 .group-container {
