@@ -19,7 +19,8 @@
     list-style-type: none;
     padding: 0;
     margin-bottom: 32px;
-
+@media screen and(max-width:768px){
+    margin-top: -150%;}
    @media screen and(min-width:768px){
        flex-wrap: nowrap;
        gap: 16px;
@@ -130,7 +131,6 @@ color: var(--txt-color-light-alt);
     @media screen and(min-width:768px){
         flex-direction: row;
     }
-
 }
 .button--accent{
 display: flex;
@@ -192,4 +192,3 @@ transition: var(--trans-effect);
     fill: transparent;
     stroke: currentColor;
 }
-

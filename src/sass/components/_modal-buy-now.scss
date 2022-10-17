@@ -1,6 +1,20 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: var(--trans-effect);
+    // overflow: scroll;
+}
+
+// .backdrop.is-hidden {
+//     pointer-events: none;
+//     visibility: hidden;
+// }
 
 .benefits{
-    position: fixed;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -12,26 +26,61 @@
     justify-content: center;
 
     width: 280px;
-    height: 990px;
+    height: 100vh;
     padding: 0 20px;
     background: var(--modal-bg);
     border-radius: 10px;
     border: 2px solid var(--accent-color);
 }
 
+.benefits__item {
+    display: flex;
+    flex-direction: column;
+       width: 132px;
+     height: 200px;
+    text-align: center;
 
-.ingrediens__elipse {
+    
+
+    &--ice-cream {
+            border: 2px solid #96AF8C;
+            
+        }
+    
+        &--ice-coffee {
+            background: linear-gradient(0deg,
+                    rgba(248, 210, 78, 0.7),
+                    rgba(248, 210, 78, 0.7)),
+                #d9d9d9;
+            box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+        }
+    
+        &--milkshakes {
+            background: linear-gradient(0deg,
+                    rgba(213, 117, 63, 0.7),
+                    rgba(213, 117, 63, 0.7)),
+                #d9d9d9;
+            box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+        }
+}
+.benefits__elipse {
     width: 132px;
-    height: 130.6px;
+    height: 130px;
     border-radius: 50%;
     background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-    margin-bottom: 24px;
+
 }
 
-.ingrediens__img {
-    position: relative;
+.benefits__img {
+    width: 131px;
+    height: 131px;
+     top: 60px;
+}
+.benefits__img {
     bottom: 8px;
+    width: 131px;
+    height: 131px;
 }
 
 .ingrediens__label {

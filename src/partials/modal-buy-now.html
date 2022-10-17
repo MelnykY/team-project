@@ -1,71 +1,48 @@
 <div class="backdrop is-hidden">
-<div class="benefits">
+  <div class="benefits">
     <button class="modal__close" type="button">
-    <svg 
-    width="16"
-     height="16" >
+      <svg width="16" height="16">
         <use class="modal__icon--close" href="./images/sprite.svg#icon-close"></use>
-    </svg>
+      </svg>
     </button>
     <h2 class="title--modal ">Buy now
     </h2>
-    <ul class="">
-        <li>
-      <div class="benefits__elipse">
-        <img 
-      class="benefits__img"
-     srcset="./images/buy-modal/buy@1x.png 130w,
-             ./images/buy-modal/buy@2x.png 260w"
-      src="./images/buy-modal/buy@1x.png"
-       alt="icecream">
-      </div>
-      </li>
-      <li>
+    <ul class="list ">
+      <li class="benefits__item--ice-cream">
         <div class="benefits__elipse">
-             <img 
-      class="benefits__img"
-     srcset="./images/buy-modal/buy1x.png 130w,
-             ./images/buy-modal/buy1@2x.png 260w"
-      src="./images/buy-modal/buy1x.png"
-       alt="icecream">
+          <img class="benefits__img" srcset="./images/buy-modal/buy@1x.png 130w,
+             ./images/buy-modal/buy@2x.png 260w" src="./images/buy-modal/buy@1x.png" alt="icecream">
+          <p></p>
         </div>
 
+        <p>ice cream</p>
       </li>
-      <li>
+      <li class="benefits__list--ice">
         <div class="benefits__elipse">
-             <img 
-      class="benefits__img"
-     srcset="./images/buy-modal/buy2@1x.png 130w,
-             ./images/buy-modal/buy2@2x.png 260w"
-      src="./images/buy-modal/buy2@1x.png"
-       alt="icecream">
+          <img class="benefits__img" srcset="./images/buy-modal/buy1x.png 130w,
+             ./images/buy-modal/buy1@2x.png 260w" src="./images/buy-modal/buy1x.png" alt="icecream">
         </div>
+        <p>ice cream</p>
+      </li>
+      <li class="benefits__list--milkshake">
+        <div class="benefits__elipse">
+          <img class="benefits__img" srcset="./images/buy-modal/buy2@1x.png 130w,
+             ./images/buy-modal/buy2@2x.png 260w" src="./images/buy-modal/buy2@1x.png" alt="icecream">
+        </div>
+        <p>milkshake</p>
       </li>
     </ul>
-     
-      <form class="ingrediens__form">
+
+    <form class="ingrediens__form">
       <label class="ingrediens__label">
-         <input 
-         class="ingrediens__input" 
-         type="text"
-          name="user-name" 
-          placeholder="Name">
-         <input 
-          class="ingrediens__input" 
-         type="tel" 
-         name="tel"
-         placeholder="Phone">
-    </label>  
-    <label class="ingrediens__label ">
-                  <textarea 
-                  class="ingrediens__textarea" 
-                  name="modal-textarea" 
-                  id="" 
-                  rows="5" 
-                  placeholder=" Comment"></textarea>
-                </label>
-     </form>
-      <button class="ingrediens__btn" type="submit">Submit</button>
-      
-    </div>
-    <div>
+        <input class="ingrediens__input" type="text" name="user-name" placeholder="Name">
+        <input class="ingrediens__input" type="tel" name="tel" placeholder="Phone">
+      </label>
+      <label class="ingrediens__label ">
+        <textarea class="ingrediens__textarea" name="modal-textarea" id="" rows="5" placeholder=" Comment"></textarea>
+      </label>
+    </form>
+    <button class="ingrediens__btn" type="submit">Submit</button>
+
+  </div>
+</div>
