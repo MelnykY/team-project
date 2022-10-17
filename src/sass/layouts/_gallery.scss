@@ -1,15 +1,22 @@
 .gallery {
-  background-color: aliceblue;
   padding-bottom: 80px;
+
+  @media screen and (min-width: 768px) {
+      padding-bottom: 60px;
+    }
+    
+    @media screen and (min-width: 1200px){
+      padding-bottom: 128px;
+    }
 
   &__container{  
   position: relative;
-  height: 280px;
+  height: 107px;
     @media screen and (min-width: 768px) {
-      height: 497px;
+      height: 163px;
     }
     @media screen and (min-width: 1200px){
-      height: 700px;
+      height: 330px;
     }
   }
 
@@ -21,10 +28,11 @@
      @media screen and (min-width: 768px) {
       top: -164px;
      }
-  }
-  @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1200px) {
       top: -92px;
      }
+  }
+ 
   }
 
 
