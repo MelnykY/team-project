@@ -7,7 +7,7 @@ background-repeat: repeat-x;
 background-position: 0% 100%;
 
 .hero-container {
-width: 247;
+width: 267px;
 height: auto;
 padding-left: 20px;
 
@@ -27,11 +27,11 @@ margin-bottom: 32px;
 .group-container {
 display: flex;
 padding-bottom: 20px;
+gap: 28px;
 
 .hero-btn {
 width: 62px;
 height: 24px;
-margin-right: 8px;
 
 font-weight: 600;
 font-size: 8px;
@@ -74,32 +74,32 @@ margin-left: auto;
 
 .ice-cream-img {
 position: absolute;
-left: 85px;
-top: 265px;
+top: 300px;
+left: 86px;
 }
 
 .smile-left {
 position: absolute;
-top: 313px;
-left: 108px;
+top: 350px;
+left: 110px
 }
 
 .smile-top {
 position: absolute;
-top: 270px;
+top: 305px;
 left: 155px;
 }
 
 .smile-right {
 position: absolute;
-top: 340px;
-left: 165px;
+top: 380px;
+left: 165px;   
 }
 
 .shadow {
 position: absolute;
-top: 190px;
-left: 30px;
+top: 230px;
+left: 25px;
 z-index: -2;
 }
 }
