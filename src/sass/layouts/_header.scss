@@ -1,13 +1,15 @@
 .header-container {
 display: flex;
 padding: 12px 20px 61px 20px;
+}
 
 .btn-mobile-menu {
+padding: 0px;
+cursor: pointer;
+border: none;
 background-color: inherit;
 fill: var(--txt-color-light);
-padding: 0px;
-border: none;
 cursor: pointer;
+border: none;
 margin-left: auto;
-}
 }
