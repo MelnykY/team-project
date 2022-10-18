@@ -14,4 +14,8 @@
     border: none;
 
     background-color: var(--modal-bg);
+    @media screen and (min-width: 1200px){
+        top: 24px;
+        right: 24px;
+    }
 }
