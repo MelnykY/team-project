@@ -14,14 +14,29 @@
     transition: transform 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+  @media screen and (min-width: 768px) {
+  padding: 20px 32px 0px 32px;
+  }
+      
+    
+
     &.is-open {
         transform: translateX(0);
     }
-}
+     }
+
 
 .nav-mobile-menu {
     display: flex;
     align-items: center;
+}
+
+.logo-img {
+@media screen and (min-width: 768px) {
+width: 48px;
+height: 44px;
+} 
+  
 }
 
 .menu-toggle {
@@ -40,8 +55,8 @@
 }
 
 
-.menu-toggle:hover,
-.menu-toggle:focus {
+.menu-toggle :hover,
+.menu-toggle :focus {
 fill: var(--accent-color);
 }
 
@@ -50,12 +65,18 @@ fill: var(--accent-color);
   align-items: center;
   margin-top: 36px;
   margin-bottom: 95px;
-}
-.menu-nav__item {
+  }
+
+.menu-mobile-nav__item {
   font-weight: 700;
   font-size: 32px;
   line-height: calc(39 / 32);
+
+  @media screen and (min-width: 768px) {
+  font-size: 48px;
+  line-height: calc(59 / 48);
 }
+ }
 
 .menu-nav__link {
   display: block;
@@ -68,8 +89,8 @@ fill: var(--accent-color);
 
 }
 
-.menu-nav__item:hover,
-.menu-nav__item:focus {
+.menu-mobile-nav__item :hover,
+.menu-mobile-nav__item :focus {
   color: var(--primary-text-color);
 }
 
@@ -91,17 +112,24 @@ fill: var(--accent-color);
   background-color: var(--accent-color);
 }
 
+
 .icon-btn-mobile-menu {
   margin-left: 7px;
   fill: transparent;
   stroke: currentColor;
+  
 }
 
-.btm-mobile-menu:hover,
-.btm-mobile-menu:focus {
+.btm-mobile-menu :hover,
+.btm-mobile-menu :focus {
   background-color: #0a8817;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
+.btm-mobile-menu {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+   }
