@@ -43,6 +43,17 @@
   background: var(--modal-bg);
   border-radius: 10px;
   outline: 2px solid var(--accent-color);
+
+
+     @media screen and (min-width: 1200px) {
+      
+        width: 568px;
+        height: 644px;
+        padding: 32px 54px;
+       
+    }
+
+
 }
 
 .benefits__title {
@@ -51,6 +62,15 @@
 
 .benefits__list {
   margin-bottom: 24px;
+
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: center;
+          align-items: flex-end;
+            gap: 32px;
+            margin-bottom: 40px;
+        }
+
 }
 
 .benefits__item {
@@ -61,6 +81,10 @@
 
   &:not(:last-child) {
     margin-bottom: 84px;
+
+    @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+        }
   }
 
   &--green {
@@ -78,6 +102,11 @@
     border: 2px solid var(--milkshakes-bg-color);
     border-radius: 15px;
   }
+
+
+          
+
+      
 }
 
 .benefits__text {
@@ -95,43 +124,7 @@
   color: var(--primary-text-color);
 }
 
-/*.benefits__item {
-    display: flex;
-    flex-direction: column;
-    width: 132px;
-    height: 200px;
-    text-align: center;
 
-    &--ice-cream {
-        border: 2px solid #96AF8C;
-    }
-
-    &--ice-coffee {
-        background: linear-gradient(0deg,
-                rgba(248, 210, 78, 0.7),
-                rgba(248, 210, 78, 0.7)),
-            #d9d9d9;
-        box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
-    }
-
-    &--milkshakes {
-        background: linear-gradient(0deg,
-                rgba(213, 117, 63, 0.7),
-                rgba(213, 117, 63, 0.7)),
-            #d9d9d9;
-        box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
-    }
-}
-
-.benefits__elipse {
-    width: 132px;
-    height: 130px;
-    border-radius: 50%;
-    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
-    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-
-}
-*/
 
 .benefits__elipse {
   position: absolute;
@@ -205,7 +198,7 @@
   margin-bottom: 16px;
   padding-left: 12px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     width: 368px;
   }
 }
@@ -228,7 +221,7 @@
   padding-left: 12px;
   padding-top: 8px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     width: 368px;
   }
 }
@@ -242,11 +235,12 @@
 .ingredients__form {
   margin-bottom: 24px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 32px;
   }
 }
 
