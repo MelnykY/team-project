@@ -1,67 +1,73 @@
 .countdown {
-    background-color: #fff;
+    background-color: var(--main-color);
     width: 100%;
-}
+    padding: 0 0 60px;
 
-.countdown__counter--wrapper {
-    display: flex;
-    justify-content: space-around;
-}
+    &__counter--wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
 
-.countdown__subheadline {
-    text-align: center;
-    font-family: var(--main-font);
-    font-size: 30px;
-    font-weight: 800;
-    line-height: calc(22/18);
-    text-transform: uppercase;
-    color: var(--accent-color);
-    margin-bottom: 12px;
-}
+    &__headline {
+        font-family: var(--secondary-font);
+        font-size: 26px;
+    }
 
-.countdown__subheadline--counter {
-    text-align: center;
-    font-family: var(--main-font);
-    font-size: 12px;
-    font-weight: 700;
-    line-height: calc(22/18);
-    text-transform: uppercase;
-    color: var(--accent-color);
-}
+    &__subheadline {
+        text-align: center;
+        font-family: var(--main-font);
+        font-size: 30px;
+        font-weight: 800;
+        line-height: calc(22/18);
+        text-transform: uppercase;
+        color: var(--accent-color);
+        margin-bottom: 12px;
 
-.countdown__title {
-    text-align: center;
-    font-family: var(--secondary-font);
-    display: inline-block;
-    color: var(--primary-text-color);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-}
+        &--counter {
+            text-align: center;
+            font-family: var(--main-font);
+            font-size: 12px;
+            font-weight: 700;
+            line-height: calc(22/18);
+            text-transform: uppercase;
+            color: var(--accent-color);
+        }
+    }
 
-.countdown_title--accent {
-    font-size: 30px;
-    color: var(--accent-color);
-}
+    &__title {
+        text-align: center;
+        font-family: var(--secondary-font);
+        display: inline-block;
+        color: var(--primary-text-color);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
 
-.countdown__subtitle {
-    text-align: center;
-    font-family: var(--secondary-font);
-    display: inline-block;
-    color: var(--primary-text-color);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    text-transform: uppercase;
-    margin-top: 30px;
-}
+        &--accent {
+            font-size: 30px;
+            color: var(--accent-color);
+        }
+    }
 
-.countdown__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    &__subtitle {
+        text-align: center;
+        font-family: var(--secondary-font);
+        display: inline-block;
+        color: var(--primary-text-color);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        margin-top: 30px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
