@@ -1,18 +1,32 @@
 <section class="products section">
   <div class="products-container container">
-    <span class="products__title">100% natural</span>
+    <p class="products__title">100% natural</p>
     <h2 id="products" class="products__main-title">products</h2>
 
     <ul class="products__list list">
       <li class="products__list-item products__list-item--ice-cream">
         <div class="products__img-bcgr products__img-bcgr--ice-cream">
-          <img
-            class="products__img"
-            src="./images/products/ice-cream_sm@1x.png"
-            alt="ice cream"
-            width="200"
-            height="200"
-          />
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/products/ice-cream_l@1x.png 1x,
+                ./images/products/ice-cream_l@2x.png 2x
+              "
+            />
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                ./images/products/ice-cream_sm@1x.png 1x,
+                ./images/products/ice-cream_sm@2x.png 2x
+              "
+            />
+            <img
+              class="products__img"
+              src="./images/products/ice-cream_sm@1x.png"
+              alt="ice cream"
+            />
+          </picture>
         </div>
         <h3 class="products__item-title">ice cream</h3>
         <p class="products__item-info">
@@ -28,13 +42,27 @@
 
       <li class="products__list-item products__list-item--ice-coffee">
         <div class="products__img-bcgr products__img-bcgr--ice-coffee">
-          <img
-            class="products__img"
-            src="./images/products/ice-coffee_sm@1x.png"
-            alt="ice coffee"
-            width="200"
-            height="200"
-          />
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/products/ice-coffee_l@1x.png 1x,
+                ./images/products/ice-coffee_l@2x.png 2x
+              "
+            />
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                ./images/products/ice-coffee_sm@1x.png 1x,
+                ./images/products/ice-coffee_sm@2x.png 2x
+              "
+            />
+            <img
+              class="products__img"
+              src="./images/products/ice-coffee_sm@1x.png"
+              alt="ice coffee"
+            />
+          </picture>
         </div>
         <h3 class="products__item-title">ice coffee</h3>
         <p class="products__item-info">
@@ -50,13 +78,27 @@
 
       <li class="products__list-item products__list-item--milkshakes">
         <div class="products__img-bcgr products__img-bcgr--milkshakes">
-          <img
-            class="products__img"
-            src="./images/products/milkshakes_sm@1x.png"
-            alt="milkshakes"
-            width="200"
-            height="200"
-          />
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                ./images/products/milkshakes_l@1x.png 1x,
+                ./images/products/milkshakes_l@2x.png 2x
+              "
+            />
+            <source
+              media="(max-width: 1199px)"
+              srcset="
+                ./images/products/milkshakes_sm@1x.png 1x,
+                ./images/products/milkshakes_sm@2x.png 2x
+              "
+            />
+            <img
+              class="products__img"
+              src="./images/products/milkshakes_sm@1x.png"
+              alt="milkshakes"
+            />
+          </picture>
         </div>
         <h3 class="products__item-title">milkshakes</h3>
         <p class="products__item-info">
