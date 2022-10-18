@@ -34,8 +34,10 @@
   //   justify-content: center;
 
   // max-height: 365px;
+  max-height: 95vh;
   max-width: 280px;
   padding: 28px;
+  overflow-y: scroll;
   background: var(--modal-bg);
   border-radius: 10px;
   border: 2px solid #f8d24e;
