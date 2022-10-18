@@ -19,29 +19,29 @@
 }
 
 .nav-mobile-menu {
-  display: flex;
-  align-items: center;
 
-  .menu-toggle {
-    padding: 0px;
-    cursor: pointer;
-    border: none;
-    background-color: inherit;
-    fill: var(--txt-color-light);
-    cursor: pointer;
-    border: none;
+display: flex;
+align-items: center;
 
-    margin-left: auto;
+.menu-toggle {
+padding: 0px;
+cursor: pointer;
+border: none;
+background-color: inherit;
+fill: var(--txt-color-light);
+cursor: pointer;
+border: none;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+margin-left: auto;
 
-  .menu-toggle :hover,
-  .menu-toggle :focus {
-    fill: var(--accent-color);
-  }
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+fill: var(--accent-color);
 }
 
 .menu-nav__list {
