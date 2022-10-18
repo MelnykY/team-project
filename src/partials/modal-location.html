@@ -1,23 +1,33 @@
-<div class="backdrop is-hidden"data-locations>
-<div class="locations">
-    <button class="modal__close" type="button"data-locations-close>
-    <svg 
-    width="16"
-     height="16" >
-        <use class="modal__icon--close" href="./images/sprite.svg#icon-close"></use>
-    </svg>
+<div class="location__backdrop is-hidden" data-locations>
+  <div class="locations">
+    <button class="modal__close" type="button" data-locations-close>
+      <svg width="16" height="16">
+        <use
+          class="modal__icon--close"
+          href="./images/sprite.svg#icon-close"
+        ></use>
+      </svg>
     </button>
     <h2 class="title--modal locations__title">Our Locations</h2>
-   <iframe 
-   width="100%" 
-   frameborder="0" 
-  src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=ice cream&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-</iframe>
-<button class="locations__button" type="button" >
-    <a  
-    target="_blank"
-    class="link locations__link" 
-    href="https://goo.gl/maps/mJWdQGqTAiSEigw98">Open map</a>
+    <div class="location-wrapper__iframe">
+      <iframe
+        class="location__iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.7519672310364!2d-2.7534994492403357!3d53.13259789830345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487aeece02ea27d7%3A0x47acf53f1d6c6ea4!2z0JDQudGBINCa0YDQuNC8INCk0LDRgNC8!5e0!3m2!1sru!2sua!4v1666014705645!5m2!1sru!2sua"
+        width="224"
+        height="200"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <button class="locations__button" type="button">
+      <a
+        target="_blank"
+        class="link locations__link"
+        href="https://goo.gl/maps/mJWdQGqTAiSEigw98"
+        >Open map</a
+      >
     </button>
-</div>
+  </div>
 </div>
