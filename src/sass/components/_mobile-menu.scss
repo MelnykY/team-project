@@ -1,41 +1,44 @@
 .mobile-menu-container {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  padding: 12px 22px 62px 31px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 12px 22px 62px 31px;
 
-  flex-direction: column;
+    flex-direction: column;
 
-  width: 100%;
-  height: 100%;
-  background-color: inherit;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
 
-  transform: translateX(100%);
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &.is-open {
-    transform: translateX(0);
-  }
+    transform: translateX(100%);
+    transition: transform 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-open {
+        transform: translateX(0);
+    }
 }
 
 .nav-mobile-menu {
-
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
+}
 
 .menu-toggle {
-padding: 0px;
-cursor: pointer;
-border: none;
-background-color: inherit;
-fill: var(--txt-color-light);
-cursor: pointer;
-border: none;
-margin-left: auto;
-transition-property: color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0px;
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+    fill: var(--txt-color-light);
+    cursor: pointer;
+    border: none;
+
+    margin-left: auto;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .menu-toggle:hover,
 .menu-toggle:focus {
@@ -62,10 +65,11 @@ fill: var(--accent-color);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding-top: 16px;
   padding-bottom: 16px;
+
 }
 
-.menu-nav__item :hover,
-.menu-nav__item :focus {
+.menu-nav__item:hover,
+.menu-nav__item:focus {
   color: var(--primary-text-color);
 }
 
@@ -100,3 +104,4 @@ fill: var(--accent-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
