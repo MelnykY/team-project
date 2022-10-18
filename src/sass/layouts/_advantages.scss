@@ -1,6 +1,8 @@
-.advantages__list {
+.advantages {
     padding-top: 42px;
     padding-bottom: 60px;
+}
+.advantages__list {
 
     @media screen and (min-width:768px) {
         padding-bottom: 204px;
@@ -41,7 +43,6 @@
                 line-height: 1.2;
                 text-align: center;
                 letter-spacing: 0.04em;
-                text-transform: uppercase;
             
                 color: var(--txt-color-light);
 
@@ -58,7 +59,6 @@
             line-height: 1.2;
             text-align: center;
             letter-spacing: 0.04em;
-            text-transform: uppercase;
             
             color:var(--txt-color-light);
         }
