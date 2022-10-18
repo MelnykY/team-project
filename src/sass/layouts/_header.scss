@@ -1,6 +1,17 @@
 .header-container {
 display: flex;
 padding: 12px 20px 61px 20px;
+
+@media screen and (min-width: 768px) {
+padding: 19px 23px 40px 41px;
+}  
+}
+
+.logo-img {
+@media screen and (min-width: 768px) {
+ width: 48px;
+ height: 44px;
+}
 }
 
 .btn-mobile-menu {
@@ -22,4 +33,42 @@ padding: 0px;
 .btn-mobile-menu:focus {
     stroke: var(--accent-color);
    // fill: var(--accent-color);
+}
+
+.btm-nav {
+    display: none;
+    margin-left: 32px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+
+    align-items: center;
+    text-align: center;
+
+    padding: 12px 34px 12px 34px;
+
+    border: none;
+
+    background-color: var(--accent-color);
+
+    @media screen and (min-width: 768px) {
+    display: flex;
+    
+}
+ }
+
+
+.icon-btn-mobile-menu {
+    margin-left: 7px;
+    fill: transparent;
+    stroke: currentColor;
+
+}
+
+.btm-nav :hover,
+.btm-nav :focus {
+    background-color: #0a8817;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

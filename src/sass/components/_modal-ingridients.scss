@@ -58,7 +58,7 @@ body.modal-open {
   line-height: calc(28 / 10);
   color: var(--primary-text-color);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     gap: 20px;
   }
 }
@@ -101,7 +101,7 @@ body.modal-open {
   border: 2px solid var(--composition-main-color);
   border-radius: 40px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     width: 65px;
     height: 90px;
   }
@@ -156,7 +156,7 @@ body.modal-open {
 }
 
 .ingrediens__label {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,7 +174,7 @@ body.modal-open {
   margin-bottom: 16px;
   padding: 0 10px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     width: 368px;
   }
 }

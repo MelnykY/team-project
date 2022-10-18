@@ -12,10 +12,20 @@
     right: 8px;
     top: 8px;
     border: none;
+    transition: var(--trans-effect);
 
     background-color: var(--modal-bg);
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 768px){
         top: 24px;
         right: 24px;
     }
+}
+
+.modal__close:hover,
+.modal__close:focus{
+    color: var(--accent-color);
+}
+
+.modal__icon--close{
+    fill: currentColor;
 }
