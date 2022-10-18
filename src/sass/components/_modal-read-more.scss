@@ -1,6 +1,6 @@
-// body.modal-open {
-//   overflow: hidden;
-// }
+body.modal-open {
+  overflow: hidden;
+}
 
 .read-more__backdrop {
   position: fixed;
@@ -40,7 +40,7 @@
 
   background-color: var(--modal-bg);
   width: 100%;
-  max-width: 280px;
+  max-width: 284px;
   max-height: 95vh;
   padding: 28px;
   overflow-y: scroll;
@@ -48,10 +48,10 @@
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  //   @media screen and (min-width: 1200px) {
-  //     max-height: 581px;
-  //     max-width: 528px;
-  //   }
+  @media screen and (min-width: 768px) {
+    max-width: 568px;
+    padding: 32px 60px;
+  }
 }
 
 .read-more__close-button {
@@ -69,20 +69,35 @@
   &:focus {
     fill: var(--accent-color);
   }
+
+  @media screen and (min-width: 768px) {
+    top: 20px;
+    right: 20px;
+  }
 }
 
 .read-more__close-button-svg {
   width: 16px;
   height: 16px;
+  @media screen and (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .read-more__title {
+  margin-bottom: 20px;
   font-family: var(--secondary-font);
   text-align: center;
-  margin-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: calc(24 / 16);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: calc(28 / 20);
+  }
 }
 
 .wrapper__iframe {
@@ -90,12 +105,21 @@
   margin-bottom: 20px;
   border-radius: 10px;
   overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 
 .iframe {
   display: block;
-  height: 200px;
   width: 224px;
+  height: 200px;
+
+  @media screen and (min-width: 768px) {
+    width: 448px;
+    height: 205px;
+  }
 }
 
 .read-more__text {
@@ -103,4 +127,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: calc(20 / 14);
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(22.4 / 16);
+  }
 }
