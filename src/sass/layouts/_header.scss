@@ -1,4 +1,5 @@
 .header-container {
+    z-index: 100;
     display: flex;
     align-items: center;
     padding: 12px 20px 61px 20px;
@@ -8,7 +9,7 @@
         //  padding: 24px 32px; // updated
 
         /*ADDED*/
-        z-index: 10;
+        // z-index: 10;
         width: 100%;
         position: fixed;
 
@@ -23,14 +24,55 @@
         padding: 24px 20px;
         background-color: #84a1789c;
     }
+
+    @media screen and (min-width: 1200px) {
+    padding: 8px 16px 0px 16px;
+    }
 }
 
-.logo-img {
+.logo-icon {
+    width: 40px;
+    height: 37px;
     @media screen and (min-width: 768px) {
         width: 48px;
         height: 45px; //was 44 pls doublecheck
     }
-    
+
+    @media screen and (min-width: 1200px){
+    width: 60px;
+    height: 65px;
+    }
+}
+
+.header-nav {
+text-align: center;
+justify-content: center;
+gap: 27px;
+margin: 0;
+padding: 0;
+list-style: none;
+display: flex;
+}
+
+.header-nav__link {
+color: var(--txt-color-light);
+font-size: 16px;
+font-weight: 700;
+line-height: calc(20 / 16);
+text-decoration: none;
+
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+@media screen and (max-width: 1199px) {
+display: none;
+}
+}
+
+.header-nav__item :hover,
+.header-nav__item :focus {
+color: var(--accent-color);
 }
 
 .btn-mobile-menu {
@@ -46,6 +88,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+    display: none;    
+    }
 }
 
 .btn-mobile-menu:hover,
@@ -70,6 +116,10 @@
 
     background-color: var(--accent-color);
 
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     @media screen and (min-width: 768px) {
         display: flex;
         width: 152px;
@@ -87,8 +137,5 @@
 
 .btn-header-nav :hover,
 .btn-header-nav :focus {
-    background-color: #0a8817;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+background-color: #0a8817;
 }

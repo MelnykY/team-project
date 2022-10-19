@@ -18,6 +18,10 @@
         /*ADDED*/
         padding: 104px 32px 14px;
     }
+
+    @media screen and (min-width: 1200px) {
+    padding: 118px 16px 65px 17px;
+    }
 }
 
 .hero-title {
@@ -41,6 +45,13 @@
         line-height: calc(23 / 18);
         margin-bottom: 20px;
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 367px;
+        font-size: 38px;
+        line-height: calc(48 / 38);
+        margin-bottom: 28px;
+    }
 }
 
 .accent-title {
@@ -56,6 +67,13 @@
         font-size: 24px;
         line-height: 13px;
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 367px;
+        font-size: 38px;
+        line-height: calc(48 / 38);
+        margin-bottom: 28px;
+    }
 }
 
 .group-container {
@@ -64,7 +82,13 @@
     gap: 28px;
 
     @media screen and (min-width: 768px) {
-        margin-bottom: 28px;
+    margin-bottom: 28px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    align-items: center;
+    gap: 34px;
+    margin-bottom: 42px;
     }
 }
 
@@ -77,6 +101,10 @@
         align-items: center;
         gap: 33px;
     }
+
+    @media screen and (min-width: 1200px) {
+    gap: 14px;
+    }
 }
 
 .hero-btn {
@@ -85,7 +113,7 @@
 
     font-weight: 600;
     font-size: 8px;
-    line-height: calc(10/8);
+    line-height: calc(10 / 8);
     display: flex;
     align-items: center;
     text-align: center;
@@ -97,6 +125,13 @@
     border: 2px solid #F8D24E;
     border-radius: 8px;
     cursor: pointer;
+
+    @media screen and (min-width: 1200px) {
+    width: 134px;
+    height: 42px;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    }
 
     &:hover,
     &:focus {
@@ -118,6 +153,13 @@
     text-decoration-line: underline;
 
     color: var(--accent-color);
+
+    @media screen and (min-width: 1200px) {
+    width: 111px;
+    height: 17px;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    }
 
     &:hover,
     &:focus {
@@ -155,6 +197,14 @@
 
         color: var(--txt-color-light);
     }
+
+    @media screen and (min-width: 1200px) {
+    width: 200px;
+    font-size: 14px;
+    line-height: 140%;
+
+    margin-bottom: 32px;
+    }
 }
 
 .hero-icon {
@@ -191,6 +241,11 @@
     @media screen and (min-width: 768px) {
         left: 70%;
         bottom: -13.5%;
+    }
+        
+    @media screen and (min-width: 1200px) {
+    bottom: -15%;
+    left: 68%;
     }
 }
 
@@ -234,7 +289,7 @@
 
         @media screen and (min-width: 1200px) {
             gap: 16px;
-            top: 126px;
+            top: -280px;
             right: 16px;
         }
     }
