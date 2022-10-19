@@ -35,7 +35,7 @@ padding: 0px;
    // fill: var(--accent-color);
 }
 
-.btm-nav {
+.btn-header-nav {
     display: none;
     margin-left: 32px;
     font-weight: 600;
@@ -65,8 +65,8 @@ padding: 0px;
 
 }
 
-.btm-nav :hover,
-.btm-nav :focus {
+.btn-header-nav :hover,
+.btn-header-nav :focus {
     background-color: #0a8817;
     transition-property: background-color;
     transition-duration: 250ms;
