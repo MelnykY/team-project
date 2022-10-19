@@ -10,10 +10,13 @@ body.modal-open {
   height: 100%;
   transition: var(--trans-effect);
   overflow-y: scroll;
+  scale: 1;
+  z-index: 100;
 }
 
 .backdrop.is-hidden {
   opacity: 0;
+  scale: 0;
   visibility: hidden;
   pointer-events: none;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -26,15 +29,17 @@ body.modal-open {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 100;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 
   width: 280px;
   height: 990px;
   max-height: 95vh;
-  padding: 0 20px;
+  padding: 28px 20px 32px;
   overflow-y: scroll;
   background: var(--modal-bg);
   border-radius: 10px;
@@ -43,7 +48,7 @@ body.modal-open {
   @media screen and (min-width: 768px) {
     width: 568px;
     height: 995px;
-    padding: 0 40px;
+    padding: 32px 40px;
   }
 }
 
@@ -84,6 +89,8 @@ body.modal-open {
 .ingrediens__img {
   position: relative;
   bottom: 8px;
+  width: 130px;
+  height: 131px;
 }
 
 .ingrediens__list {
@@ -174,9 +181,15 @@ body.modal-open {
   margin-bottom: 16px;
   padding: 0 10px;
 
+
   @media screen and (min-width: 768px) {
     width: 368px;
   }
+
+     &:hover,
+     &:focus {
+       border: 1px solid var(--accent-color);
+     }
 }
 
 .ingrediens__input::placeholder {
@@ -193,13 +206,18 @@ body.modal-open {
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid var(--main-color);
   border-radius: 10px;
-  transition: border var(--animation);
+  transition:  var(--animation);
   padding: 0 10px;
   padding-top: 11px;
 
   @media screen and (min-width: 768px) {
     width: 368px;
   }
+
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+    }
 }
 
 .ingrediens__textarea::placeholder {
@@ -238,4 +256,94 @@ body.modal-open {
   color: var(--primary-text-color);
   background-color: var(--accent-color);
   border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 17px;
+    }
+}
+
+
+
+.ingrediens__elipse--icecoffe{
+  width: 132px;
+  height: 130.6px;
+  border-radius: 50%;
+  background-color: var(--ice-coffe-bg-color);
+  margin-bottom: 24px;
+}
+
+.ingrediens__text--icecoffe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 53px;
+  height: 72px;
+  border: 2px solid var(--ice-coffe-bg-color);
+  border-radius: 40px;
+
+  @media screen and (min-width: 768px) {
+    width: 65px;
+    height: 90px;
+  }
+}
+
+.ingrediens_desk--icecoffe{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  background: var(--ice-coffe-bg-color);
+  border-radius: 50px;
+
+  @media screen and (min-width: 768px) {
+    width: 57px;
+    height: 57px;
+  }
+}
+
+
+
+
+.ingrediens__elipse--milk{
+  width: 132px;
+  height: 130.6px;
+  border-radius: 50%;
+  background-color: var(--milkshakes-bg-color);
+  margin-bottom: 24px;
+}
+
+.ingrediens__text--milk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 53px;
+  height: 72px;
+  border: 2px solid var(--milkshakes-bg-color);
+  border-radius: 40px;
+
+  @media screen and (min-width: 768px) {
+    width: 65px;
+    height: 90px;
+  }
+}
+
+.ingrediens_desk--milk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  background: var(--milkshakes-bg-color);
+  border-radius: 50px;
+
+  @media screen and (min-width: 768px) {
+    width: 57px;
+    height: 57px;
+  }
 }
