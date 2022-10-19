@@ -1,6 +1,33 @@
 .products {
   background-color: var(--primary-white-color);
-  background-image: url(../images/products/bcgr_l@1x.png);
+  background-image: url(../images/products/bcgr_sm@1x.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/products/bcgr_sm@2x.png);
+  }
+
+  @media screen and (min-width: 481px) {
+    background-image: url(../images/products/bcgr_md@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/bcgr_md@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    background-image: url(../images/products/bcgr_l@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/bcgr_l@2x.png);
+    }
+  }
+  background-size: contain;
 }
 
 .products-container {
@@ -74,7 +101,7 @@
 
   border-radius: 24px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.5px) {
     &:not(:last-child) {
       margin-bottom: 164px;
     }
