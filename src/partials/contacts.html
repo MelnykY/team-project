@@ -2,12 +2,15 @@
     <div class="container">
     <h2 id="contacts" class="section__title visually-hidden">CONTACTS</h2>
     <ul class="locations-our">
-        <li class="location__item">
+        <li class="location__item"
+         data-aos="flip-left"
+        data-aos-delay="400"
+        data-aos-duration="1000">
             <span class="location__place local__text">CAFE</span>
             <div class="location-top">
                 <p class="location-city local__text">Chicago</p>
-                <p class="location-address local__text address--Chicago">10340 Ridgeland Ave,   
-                     Chicago Ridge, IL 60415, USA</p>
+                <p class="location-address local__text address--Chicago">
+                    10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</p>
             </div>
             <ul class="location-schedule">
                 <li class="local__text text--black">Monday - Friday</li>
@@ -20,7 +23,10 @@
                 <a class="text--black link-accent" href="mailto:noreply@envato.com">noreply@envato.com</a>
             </div>
         </li>
-        <li class="location__item">
+        <li class="location__item" 
+        data-aos="flip-right"
+        data-aos-delay="500"
+        data-aos-duration="1000">
             <span class="location__place local__text">FOOD TRUCK</span>
             <div class="location-top">
                 <p class="location-city local__text ">Los Angeles</p>
@@ -37,7 +43,10 @@
                 <a class="text--black link-accent" href="mailto:noreply@envato.com">noreply@envato.com</a>
             </div>
         </li>
-        <li class="location__item">
+        <li class="location__item" 
+        data-aos="flip-left"
+        data-aos-delay="600"
+        data-aos-duration="1000">
             <span class="location__place local__text">CAFE</span>
             <div class="location-top">
                 <p class="location-city local__text ">New York</p>
@@ -55,12 +64,12 @@
             </div>
         </li>
     </ul>
-     <div class="local-button">
-    <button class="button button--accent" type="button" data-locations-open>Our Locations
+     <div class="local-button"data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+    <button class="button button--accent btn-animate" type="button" data-locations-open>Our Locations
         <svg class="button-icon" width="12" height="12">
             <use  href="/src/images/sprite.svg#icon-more"></use>
     </button>
-    <button class="button button--transparent" type="button" data-franchise-open>Franchise
+    <button class="button button--transparent btn-animate" type="button" data-franchise-open>Franchise
          <svg class="button-icon" width="12" height="12">
             <use href="/src/images/sprite.svg#icon-more"></use>
         </svg>

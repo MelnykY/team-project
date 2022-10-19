@@ -231,3 +231,7 @@ transition: var(--trans-effect);
     fill: transparent;
     stroke: currentColor;
 }
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+  }
