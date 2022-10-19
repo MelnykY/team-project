@@ -1,18 +1,15 @@
-.hero {
-background-image: url(../images/hero/points-bg/sm/points-bg_sm@1x.png);
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-background-image: url(../images/hero/points-bg/sm/points-bg_sm@2x.png)
-}
-background-repeat: repeat-x;
-background-position: 0% 100%;
-}
-
 .hero-container {
-width: 267px;
+
 height: auto;
-padding-left: 20px;
+
+padding: 0px 20px 239px;
+
+@media screen and (min-width: 768px) {
+padding: 0px 20px 5px 41px;
+}
  }
 .hero-title {
+width: 247px;
 font-family: var(--secondary-font);
 
 font-size: 26px;
@@ -25,6 +22,13 @@ color: var(--txt-color-light);
 margin-bottom: 32px;
 
 letter-spacing: 4%;
+
+@media screen and (min-width: 768px) {
+width: 180px;
+font-size: 18px;
+line-height: calc(23 / 18);
+margin-bottom: 20px;
+}
 }
 
 .accent-title {
@@ -35,13 +39,33 @@ line-height: calc(34 / 33);
 
 text-transform: uppercase;
 color: var(--txt-color-light);
+
+@media screen and (min-width: 768px) {
+font-size: 24px;
+line-height: 13px;
+}
 }
 
 .group-container {
 display: flex;
-padding-bottom: 20px;
+margin-bottom: 20px;
 gap: 28px;
- }
+
+@media screen and (min-width: 768px) {
+margin-bottom: 56px;
+}
+}
+
+.hero-group {
+display: none;
+
+@media screen and (min-width: 768px) {
+position: relative;
+ display: flex;
+ align-items: center;
+ gap: 33px;
+}
+}
 
 .hero-btn {
 width: 62px;
@@ -92,40 +116,63 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 }
 
+.hero-desc-box {
+width: 151px;
+
+@media screen and (max-width: 767px) {
+display: none;
+
+}
+}
+
+.hero-img-plate {
+// position: absolute;
+// top: 0px;
+}
+
+.hero-text {
+
+@media screen and (min-width: 768px) {
+display: inline-block;
+font-size: 12px;
+line-height: 140%;
+
+margin-bottom: 20px;
+
+color: var(--txt-color-light);
+}
+}
+
+.hero-icon {
+fill: var(--txt-color-light);
+}
+
 .ice-cream-container {
 width: 170px;
 height: 219px;
 margin-right: auto;
 margin-left: auto;
-
-.ice-cream-img {
-position: absolute;
-top: 303px;
-left: 86px;
 }
 
-.smile-left {
+.hero-img {
 position: absolute;
-top: 350px;
-left: 110px
-}
+top: 257px;
+left: 11%;
 
-.smile-top {
-position: absolute;
-top: 305px;
-left: 155px;
+@media screen and (min-width: 768px) {
+top: 40px;
+left: 370px;
 }
+ }
 
-.smile-right {
+.hero-img-points {
 position: absolute;
-top: 380px;
-left: 165px;   
-}
-
-.shadow {
-position: absolute;
-top: 230px;
-left: 25px;
+top: 479px;
+left: 0%;
 z-index: -2;
+
+@media screen and (min-width: 768px) {
+top: 370px;
+left: 0%;
 }
 }
