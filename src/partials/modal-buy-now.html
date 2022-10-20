@@ -1,8 +1,8 @@
 <div class="backdrop-buy is-hidden" data-buy>
   <div class="benefits modal-open">
     <button class="modal__close" type="button" data-buy-close>
-      <svg width="16" height="16">
-        <use class="modal__icon--close" href="./images/sprite.svg#icon-close"></use>
+      <svg width="16" height="16" class="modal__icon--close" >
+        <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
     <h2 class="title--modal benefits__title">Buy now
@@ -40,14 +40,15 @@
 
     <form class="ingredients__form">
       <label class="ingredients__label">
-        <input class="ingredients__input" type="text" name="user-name" placeholder="Name">
-        <input class="ingredients__input" type="tel" name="tel" placeholder="Phone">
+        <input class="ingredients__input" type="text" name="user-name" pattern="[a-z]{4,8}" placeholder="Name" required>
+        <input class="ingredients__input" type="tel" name="tel" pattern="[0-9]{8}" placeholder="Phone" required>
       </label>
       <label class="ingredients__label ">
         <textarea class="ingredients__textarea" name="modal-textarea" id="" rows="5" placeholder="Comment"></textarea>
       </label>
+      <button class="ingredients__btn" type="submit">Submit</button>
     </form>
-    <button class="ingredients__btn" type="submit">Submit</button>
+    
 
   </div>
 </div>

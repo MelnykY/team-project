@@ -1,20 +1,18 @@
 .modal__close {
     position: absolute;
+    right: 8px;
+    top: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-
     width: 16px;
     height: 16px;
     padding: 0;
-
-    right: 8px;
-    top: 8px;
-    border: none;
-    transition: var(--trans-effect);
-
     background-color: var(--modal-bg);
+    border: none;
+    transition: fill var(--trans-effect);
+    cursor: pointer;
+    
     @media screen and (min-width: 768px){
         top: 24px;
         right: 24px;
@@ -23,9 +21,9 @@
 
 .modal__close:hover,
 .modal__close:focus{
-    color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
-.modal__icon--close{
-    fill: currentColor;
-}
+// .modal__icon--close{
+//     fill: currentColor;
+// }
