@@ -15,7 +15,7 @@
   opacity: 1;
   visibility: visible;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -50,7 +50,7 @@
     padding: 32px 54px;
   }
 
-  &::-webkit-scrollbar{
+  &::-webkit-scrollbar {
     width: 30px;
     display: none;
   }
@@ -202,7 +202,7 @@
 .ingredients__input:hover,
 .ingredients__input:focus,
 .ingredients__textarea:hover,
-.ingredients__textarea:focus{
+.ingredients__textarea:focus {
   border: 1px solid var(--accent-color);
 }
 
@@ -237,7 +237,6 @@
 }
 
 .ingredients__form {
-
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -262,23 +261,24 @@
   border: none;
   border-radius: 10px;
   transition: background-color var(--trans-effect), color var(--trans-effect);
-  cursor: pointer;
+  cursor: url('../images/cursor--active.svg'), auto;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 17px;
   }
 
-  &:hover{
+  &:hover {
     background-color: rgba(10, 136, 23, 1);
   }
 
-  &:focus{
+  &:focus {
     background-color: rgba(10, 136, 23, 1);
-    color:var(--primary-white-color) ;
+    color: var(--primary-white-color);
   }
 
-  &:disabled{
-    background-color:var(--time-text-color);
-  } 
+  &:disabled {
+    background-color: var(--time-text-color);
+  }
 }
