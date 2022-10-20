@@ -1,27 +1,28 @@
 .modal__close {
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 16px;
-    height: 16px;
-    padding: 0;
-    background-color: var(--modal-bg);
-    border: none;
-    transition: fill var(--trans-effect);
-    cursor: pointer;
-    
-    @media screen and (min-width: 768px){
-        top: 24px;
-        right: 24px;
-    }
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  background-color: var(--modal-bg);
+  border: none;
+  transition: fill var(--trans-effect);
+  cursor: url('../images/cursor--active.svg'), auto;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    top: 24px;
+    right: 24px;
+  }
 }
 
 .modal__close:hover,
-.modal__close:focus{
-    fill: var(--accent-color);
+.modal__close:focus {
+  fill: var(--accent-color);
 }
 
 // .modal__icon--close{
