@@ -12,6 +12,7 @@ body.modal-open {
   opacity: 1;
 
   &.is-hidden {
+    scale: 0;
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
