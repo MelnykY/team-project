@@ -16,7 +16,6 @@ body.modal-open {
   visibility: visible;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
   visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  scale: 1;
 
   &.is-hidden {
     opacity: 0;
@@ -24,7 +23,10 @@ body.modal-open {
     visibility: hidden;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    scale: 0;
+  }
+
+  &.is-hidden .modal-franchise {
+    transform: translate(-50%, -50%) scale(0.5);
   }
 }
 
