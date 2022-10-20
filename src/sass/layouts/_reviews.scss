@@ -8,6 +8,16 @@
   }
 }
 
+.reviews-slider .slick-slider {
+  margin: 0 -15px;
+}
+
+.reviews-slider .slick-slide {
+  text-align: center;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
 /* Ограничивающая оболочка */
 .reviews-slider .slick-list {
   overflow: hidden;
