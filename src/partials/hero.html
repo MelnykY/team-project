@@ -10,24 +10,34 @@
     </div>
     <div class="hero-group">
         <picture>
-          <img class="hero-img-plate" 
-          srcset="
-          ./images/hero/plate/md/plate_md@152.png 152w,
-          ./images/hero/plate/lg/plate_lg@225.png 225w,
-          ./images/hero/plate/md/plate_md@304.png 304w,
-          ./images/hero/plate/lg/plate_lg@225.png 450w
-        " 
-        sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px, 100vw"
-        src="./images/hero/plate/md/plate_md@152.png" 
-        alt="Торілка">
+          <!-- Desktop -->
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/hero/plate/lg/plate_lg@225.png 1x,
+              ./images/hero/plate/lg/plate_lg@450.png 2x
+            "
+          >
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/hero/plate/md/plate_md@152.png 1x,
+              ./images/hero/plate/md/plate_md@304.png 2x
+            "
+          >
+          <img
+            class="hero-img-plate"
+            src="./images/hero/plate/lg/plate_lg@225.png"
+        alt="Тaрілка">
         </picture>
         <div class="hero-desc-box">
         <p class="hero-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
         </p>
-        <svg class="hero-icon" width="40" height="15">
+        <!-- <svg class="hero-icon" width="40" height="15">
         <use href="./images/sprite.svg#icon-arrow"></use>
-        </svg> 
+        </svg>  -->
       </div>
       <ul class="hero__chain-list">
         <li class="hero__chain-item">
@@ -40,30 +50,64 @@
       </ul>
       </div>
         <picture>
-        <img class="hero-img"
-        srcset="
-        ./images/hero/ice_cream/sm/ice-cream_sm@170.png 170w,
-        ./images/hero/ice_cream/md/ice-cream_md@270.png 270w,
-        ./images/hero/ice_cream/sm/ice-cream_sm@340.png 340w,
-        ./images/hero/ice_cream/lg/ice-cream_lg@485.png 485w,
-        ./images/hero/ice_cream/md/ice-cream_md@540.png 540w,
-        ./images/hero/ice_cream/lg/ice-cream_lg@970.png 970w
-        "
-        sizes="(min-width: 1200px) 485px, (min-width: 768px) 270px, (min-width: 320px) 170px, 100vw"
-        src="./images/hero/ice_cream/sm/ice-cream_sm@170.png " 
-        alt="Морозиво">
+          <!-- Desktop -->
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/hero/ice_cream/lg/ice-cream_lg@485.png 1x,
+              ./images/hero/ice_cream/lg/ice-cream_lg@970.png 2x
+            "
+          >
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/hero/ice_cream/md/ice-cream_md@270.png 1x,
+              ./images/hero/ice_cream/md/ice-cream_md@540.png 2x
+            "
+          >
+          <!-- Mobile -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/hero/ice_cream/sm/ice-cream_sm@170.png 1x,
+              ./images/hero/ice_cream/sm/ice-cream_sm@340.png 2x
+            "
+          >
+          <img
+            class="hero-img"
+            src="./images/hero/ice_cream/lg/ice-cream_lg@485.png"
+            alt="морозиво"
+          >
         </picture>
         <picture>
-        <img class="hero-img-points" srcset="
-        ./images/hero/points-bg/sm/points_sm@328.png 328w,
-        ./images/hero/points-bg/sm/points_sm@656.png 656w,
-        ./images/hero/points-bg/md/points_md@767.png 767w,
-        ./images/hero/points-bg/lg/points_lg@1200.png 1200w,
-        ./images/hero/points-bg/md/points_md@1534.png 1534w,
-        ./images/hero/points-bg/lg/points_lg@2400.png 2400w
-        " 
-        sizes="(min-width: 1200px) 1200px, (min-width: 768px) 767px, (min-width: 320px) 328px, 100vw"
-        src="./images/hero/points-bg/sm/points_sm@328.png" 
+          <!-- Desktop -->
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/hero/points-bg/lg/points_lg@1200.png 1x,
+              ./images/hero/points-bg/lg/points_lg@2400.png 2x
+            "
+          >
+          <!-- Tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/hero/points-bg/md/points_md@767.png 1x,
+              ./images/hero/points-bg/md/points_md@1534.png 2x
+            "
+          >
+          <!-- Mobile -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/hero/points-bg/sm/points_sm@328.png 1x,
+              ./images/hero/points-bg/sm/points_sm@656.png 2x
+            "
+          >
+          <img
+            class="hero-img-points"
+            src="./images/hero/points-bg/lg/points_lg@1200.png"
         alt="Крапки">
         </picture>
   </div>
