@@ -1,0 +1,25 @@
+.btn-go-top {
+    position: fixed;
+    background: transparent;
+    bottom: 2%;
+    right: 2%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    fill: var(--accent-color);
+    background-color: #84a17865;
+    border-radius: 50%;
+
+    &:hover {
+        fill: #84a178dc;
+        background-color: #F8D24E;
+        transition: fill, background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:not(:hover) {
+        transition: fill, background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
