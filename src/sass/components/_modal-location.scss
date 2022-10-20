@@ -98,6 +98,7 @@ body.modal-open {
 
 .locations__button {
   display: block;
+  width: 134px;
   margin: 0 auto;
   padding: 12px 34px;
   background-color: var(--accent-color);
@@ -118,9 +119,14 @@ body.modal-open {
   &:disabled {
     background-color: var(--time-text-color);
   }
+
+  @media screen and (min-width: 768px) {
+    width: 145px;
+  }
 }
 
 .locations__link {
+  width: 100%;
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);

@@ -11,8 +11,12 @@
       <li class="benefits__item benefits__item--green">
         <div class="benefits__thumb">
         <div class="benefits__elipse benefits__elipse--ice-cream">
-          <img class="benefits__img" srcset="./images/buy-modal/buy@1x.png 130w,
-             ./images/buy-modal/buy@2x.png 260w" src="./images/buy-modal/buy@1x.png" alt="icecream">
+          <img class="benefits__img" 
+          srcset="./images/buy-modal/buy@1x.png 130w,
+             ./images/buy-modal/buy@2x.png 260w" 
+             sizes="(min-width: 320px) 130px"
+             src="./images/buy-modal/buy@1x.png" 
+             alt="icecream">
           <p></p>
         </div>
       </div>
@@ -22,7 +26,9 @@
         <div class="benefits__thumb">
         <div class="benefits__elipse benefits__elipse--ice-coffee">
           <img class="benefits__img" srcset="./images/buy-modal/buy1x.png 130w,
-             ./images/buy-modal/buy1@2x.png 260w" src="./images/buy-modal/buy1x.png" alt="icecream">
+             ./images/buy-modal/buy1@2x.png 260w"
+             sizes="(min-width: 320px) 130px"
+             src="./images/buy-modal/buy1x.png" alt="icecream">
         </div>
         </div>
         <p class="benefits__text">ice coffee</p>
@@ -31,7 +37,9 @@
         <div class="benefits__thumb">
         <div class="benefits__elipse benefits__elipse--milkshakes">
           <img class="benefits__img" srcset="./images/buy-modal/buy2@1x.png 130w,
-             ./images/buy-modal/buy2@2x.png 260w" src="./images/buy-modal/buy2@1x.png" alt="icecream">
+             ./images/buy-modal/buy2@2x.png 260w"
+             sizes="(min-width: 320px) 130px"
+             src="./images/buy-modal/buy2@1x.png" alt="icecream">
         </div>
         <p class="benefits__text">milkshake</p>
         </div>
@@ -39,13 +47,15 @@
     </ul>
 
     <form class="ingredients__form">
-      <label class="ingredients__label">
+      <div class="ingredients__label">
         <input class="ingredients__input" type="text" name="user-name" pattern="[a-z]{4,8}" placeholder="Name" required>
+      </div>
+      <div class="ingredients__label">
         <input class="ingredients__input" type="tel" name="user-tel" pattern="[0-9]{8}" placeholder="Phone" required>
-      </label>
-      <label class="ingredients__label ">
-        <textarea class="ingredients__textarea" name="modal-textarea" id="" rows="5" placeholder="Comment"></textarea>
-      </label>
+      </div>
+      <div class="ingredients__label ">
+        <textarea class="ingredients__textarea" name="modal-textarea" id="modal-textarea" rows="5" placeholder="Comment"></textarea>
+      </div>
       <button class="ingredients__btn" type="submit">Submit</button>
     </form>
     
