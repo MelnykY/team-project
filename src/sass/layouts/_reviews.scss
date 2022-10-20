@@ -43,8 +43,12 @@
   left: 0;
   background: url('../images/reviews/chevron-left.svg') left center / 60%
     no-repeat;
+  @media screen and (min-width: 480px) {
+    background-position-y: calc(50% + 20px);
+  }
   @media screen and (min-width: 768px) {
     background-size: 100%;
+    background-position-y: calc(50% + 15px);
   }
   border: none;
   &:before {
@@ -56,8 +60,12 @@
   right: 0;
   background: url('../images/reviews/chevron-right.svg') right center / 60%
     no-repeat;
+  @media screen and (min-width: 480px) {
+    background-position-y: calc(50% + 20px);
+  }
   @media screen and (min-width: 768px) {
     background-size: 100%;
+    background-position-y: calc(50% + 15px);
   }
   border: none;
   &:before {
