@@ -27,7 +27,7 @@
 }
 
 .benefits {
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -49,10 +49,18 @@
     height: 644px;
     padding: 32px 54px;
   }
+
+  &::-webkit-scrollbar{
+    width: 30px;
+    display: none;
+  }
 }
 
 .benefits__title {
   margin-bottom: 84px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 106px;
+  }
 }
 
 .benefits__list {
@@ -184,6 +192,7 @@
   border-radius: 10px;
   margin-bottom: 16px;
   padding-left: 12px;
+  transition: border var(--trans-effect);
 
   @media screen and (min-width: 768px) {
     width: 368px;
@@ -194,7 +203,7 @@
 .ingredients__input:focus,
 .ingredients__textarea:hover,
 .ingredients__textarea:focus{
-border: 1px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .ingredients__input::placeholder {
@@ -213,9 +222,11 @@ border: 1px solid var(--accent-color);
   border-radius: 10px;
   padding-left: 12px;
   padding-top: 8px;
-
+  margin-bottom: 24px;
+  transition: border var(--trans-effect);
   @media screen and (min-width: 768px) {
     width: 368px;
+    margin-bottom: 32px;
   }
 }
 
@@ -226,14 +237,12 @@ border: 1px solid var(--accent-color);
 }
 
 .ingredients__form {
-  margin-bottom: 24px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 32px;
   }
 }
 
@@ -243,16 +252,33 @@ border: 1px solid var(--accent-color);
   justify-content: center;
   font-family: inherit;
 
+  width: 114px;
+  min-height: 42px;
+  color: var(--primary-text-color);
+  background-color: var(--accent-color);
   font-weight: 600;
   font-size: 14px;
   line-height: calc(17 / 14);
-
-  width: 114px;
-  min-height: 42px;
-
-  cursor: pointer;
   border: none;
-  color: var(--primary-text-color);
-  background-color: var(--accent-color);
   border-radius: 10px;
+  transition: background-color var(--trans-effect), color var(--trans-effect);
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &:hover{
+    background-color: rgba(10, 136, 23, 1);
+  }
+
+  &:focus{
+    background-color: rgba(10, 136, 23, 1);
+    color:var(--primary-white-color) ;
+  }
+
+  &:disabled{
+    background-color:var(--time-text-color);
+  } 
 }

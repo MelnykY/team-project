@@ -1,9 +1,8 @@
 <div class="backdrop is-hidden" data-ingrediens>
   <div class="ingrediens modal-open">
     <button class="modal__close" type="button" data-ingrediens-close>
-      <svg width="16" height="16">
+      <svg width="16" height="16" class="modal__icon--close">
         <use
-          class="modal__icon--close"
           href="./images/sprite.svg#icon-close"
         ></use>
       </svg>
@@ -71,14 +70,18 @@
           type="text"
           name="user-name"
           id="name"
+          pattern="[a-z]{4,8}"
           placeholder="Name"
+          required
         />
         <input
           class="ingrediens__input"
           type="tel"
           name="tel"
           id="tel"
+          pattern="[0-9]{8}"
           placeholder="Phone"
+          required
         />
       </label>
       <label class="ingrediens__label">
@@ -90,8 +93,9 @@
           placeholder=" Comment"
         ></textarea>
       </label>
-    </form>
     <button type="submit" class="ingrediens__btn">Submit</button>
+    </form>
+    
   </div>
   <div></div>
 </div>
@@ -101,9 +105,8 @@
 <div class="backdrop is-hidden" data-icecoffe>
   <div class="ingrediens modal-open">
     <button class="modal__close" type="button" data-icecoffe-close>
-      <svg width="16" height="16">
+      <svg width="16" height="16" class="modal__icon--close">
         <use
-          class="modal__icon--close"
           href="./images/sprite.svg#icon-close"
         ></use>
       </svg>
@@ -171,14 +174,18 @@
           type="text"
           name="user-name"
           id="name"
+          pattern="[a-z]{4,8}"
           placeholder="Name"
+          required
         />
         <input
           class="ingrediens__input"
           type="tel"
           name="tel"
           id="tel"
+          pattern="[0-9]{8}"
           placeholder="Phone"
+          required
         />
       </label>
       <label class="ingrediens__label">
@@ -190,8 +197,9 @@
           placeholder=" Comment"
         ></textarea>
       </label>
+    <button type="submit" class="ingrediens__btn">Submit</button> 
     </form>
-    <button type="submit" class="ingrediens__btn">Submit</button>
+    
   </div>
   <div></div>
 </div>
@@ -201,9 +209,8 @@
 <div class="backdrop is-hidden" data-milk>
   <div class="ingrediens modal-open">
     <button class="modal__close" type="button" data-milk-close>
-      <svg width="16" height="16">
+      <svg width="16" height="16" class="modal__icon--close">
         <use
-          class="modal__icon--close"
           href="./images/sprite.svg#icon-close"
         ></use>
       </svg>
@@ -271,14 +278,18 @@
           type="text"
           name="user-name"
           id="name"
+          pattern="[a-z]{4,8}"
           placeholder="Name"
+          required
         />
         <input
           class="ingrediens__input"
           type="tel"
           name="tel"
           id="tel"
+          pattern="[0-9]{8}"
           placeholder="Phone"
+          required
         />
       </label>
       <label class="ingrediens__label">
@@ -290,8 +301,9 @@
           placeholder=" Comment"
         ></textarea>
       </label>
-    </form>
     <button type="submit" class="ingrediens__btn">Submit</button>
+    </form>
+    
   </div>
   <div></div>
 </div>

@@ -23,7 +23,9 @@
           class="form__input"
           name="name"
           id="name"
+          pattern="[a-z]{4,8}"
           placeholder="Name"
+          required
         />
       </div>
 
@@ -33,7 +35,9 @@
           class="form__input"
           name="tel"
           id="tel"
+          pattern="[0-9]{8}"
           placeholder="Phone"
+          required
         />
       </div>
 
@@ -43,7 +47,9 @@
           class="form__input"
           name="email"
           id="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           placeholder="Email"
+          required
         />
       </div>
       <div class="form__field">

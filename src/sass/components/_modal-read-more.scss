@@ -52,29 +52,34 @@ body.modal-open {
     max-width: 568px;
     padding: 32px 60px;
   }
-}
-
-.read-more__close-button {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background-color: transparent;
-  border: transparent;
-  border-radius: 0;
-
-  &:hover,
-  &:focus {
-    fill: var(--accent-color);
-  }
-
-  @media screen and (min-width: 768px) {
-    top: 20px;
-    right: 20px;
+  
+  &::-webkit-scrollbar{
+    width: 30px;
+    display: none;
   }
 }
+
+// .read-more__close-button {
+//   display: flex;
+//   align-items: center;
+//   padding: 0;
+//   position: absolute;
+//   top: 8px;
+//   right: 8px;
+//   background-color: transparent;
+//   border: transparent;
+//   border-radius: 0;
+
+//   &:hover,
+//   &:focus {
+//     fill: var(--accent-color);
+//   }
+
+//   @media screen and (min-width: 768px) {
+//     top: 20px;
+//     right: 20px;
+//   }
+// }
 
 .read-more__close-button-svg {
   width: 16px;
