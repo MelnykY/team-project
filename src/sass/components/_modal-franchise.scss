@@ -221,7 +221,6 @@ body.modal-open {
   font-size: 12px;
   line-height: 15px;
   border-color: transparent;
-  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   cursor: pointer;
 
@@ -229,4 +228,19 @@ body.modal-open {
     font-size: 14px;
     line-height: 17px;
   }
+
+  &:hover{
+    background-color: rgba(10, 136, 23, 1);
+  }
+
+  &:focus{
+    border-style: none;
+    background-color: rgba(10, 136, 23, 1);
+    color:var(--primary-white-color) ;
+  }
+
+  &:disabled{
+    background-color:var(--time-text-color);
+  }
+  
 }
