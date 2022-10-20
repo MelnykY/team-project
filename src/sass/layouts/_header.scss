@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     padding: 12px 20px 61px 20px;
-   
+
 
     @media screen and (min-width: 768px) {
         //  padding: 24px 32px; // updated
@@ -26,36 +26,38 @@
     }
 
     @media screen and (min-width: 1200px) {
-    width: 1200px;
-    padding: 8px 16px 0px 16px;
+        width: 1200px;
+        padding: 8px 16px 0px 16px;
     }
 }
 
 .logo-icon {
     width: 40px;
     height: 37px;
+
     @media screen and (min-width: 768px) {
         width: 48px;
         height: 45px; //was 44 pls doublecheck
     }
 
-    @media screen and (min-width: 1200px){
-    width: 60px;
-    height: 65px;
+    @media screen and (min-width: 1200px) {
+        width: 60px;
+        height: 65px;
     }
 }
 
 .header-nav {
-text-align: center;
-justify-content: center;
-gap: 27px;
-margin: 0;
-padding: 0;
-list-style: none;
-display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 27px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
 }
 
 .header-nav__link {
+
 color: var(--txt-color-light);
 font-size: 16px;
 font-weight: 700;
@@ -76,7 +78,10 @@ display: none;
 
 .header-nav__item :hover,
 .header-nav__item :focus {
-color: var(--accent-color);
+    color: var(--accent-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-mobile-menu {
@@ -94,14 +99,16 @@ color: var(--accent-color);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 1200px) {
-    display: none;    
+        display: none;
     }
 }
 
 .btn-mobile-menu:hover,
 .btn-mobile-menu:focus {
     stroke: var(--accent-color);
-    // fill: var(--accent-color);
+    transition-property: stroke;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-header-nav {
@@ -124,6 +131,30 @@ color: var(--accent-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    &:hover {
+        background-color: rgba(10, 136, 23, 1);
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:focus {
+        border-style: none;
+        background-color: rgba(10, 136, 23, 1);
+        color: var(--primary-white-color);
+
+        transition-property: background-color, color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:disabled {
+        background-color: var(--time-text-color);
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
     @media screen and (min-width: 768px) {
         display: flex;
         width: 152px;
@@ -136,10 +167,12 @@ color: var(--accent-color);
     margin-left: 7px;
     fill: transparent;
     stroke: currentColor;
-
 }
 
 .btn-header-nav :hover,
 .btn-header-nav :focus {
-background-color: #0a8817;
+    background-color: #0a8817;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
