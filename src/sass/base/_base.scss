@@ -1,9 +1,10 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: var(--main-font);
-    background-color: var(--main-color);
-    color: var(--primary-text-color);
+  font-family: var(--main-font);
+  background-color: var(--main-color);
+  color: var(--primary-text-color);
+  cursor: url('../images/cursor.svg'), auto;
 }
