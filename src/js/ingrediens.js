@@ -14,12 +14,10 @@
   }
 })();
 
-
-
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-icecoffe-open]'),
-    closeModalBtn: document.querySelector('[data-iicecoffe-close]'),
+    closeModalBtn: document.querySelector('[data-icecoffe-close]'),
     modal: document.querySelector('[data-icecoffe]'),
   };
 
@@ -31,8 +29,6 @@
     refs.modal.classList.toggle('is-hidden');
   }
 })();
-
-
 
 (() => {
   const refs = {
