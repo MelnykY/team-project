@@ -99,9 +99,9 @@
         gap: 33px;
     }
 
-    @media screen and (min-width: 1200px) {
-        gap: 14px;
-    }
+    // @media screen and (min-width: 1200px) {
+        // 
+    // }
 }
 
 .hero-btn {
@@ -170,11 +170,25 @@
 
 .hero-desc-box {
 
-    width: 200px;
-    //width: 151px;
-
     @media screen and (max-width: 767px) {
         display: none;
+    }
+
+   @media screen and (min-width: 768px) {
+   width: 151px;
+   position: absolute;
+   transform: translateX(152px);
+   left: 33px;
+   bottom: 12px;
+   letter-spacing: 0.04em;
+   }
+
+    @media screen and (min-width: 1200px) {
+    width: 200px;
+    transform: translateX(225px);
+    left: 14px;
+    bottom: 38px;
+    letter-spacing: normal;
     }
 }
 
@@ -186,12 +200,13 @@
 .hero-text {
 
     @media screen and (min-width: 768px) {
+        
         display: inline-block;
         position: relative;
         font-size: 12px;
         line-height: calc(17/12);
 
-        margin-bottom: 20px;
+        margin-bottom: 13px;
 
         color: var(--txt-color-light);
 
@@ -211,7 +226,6 @@
 
     @media screen and (min-width: 1200px) {
         font-weight: 400;
-        width: 200px;
         font-size: 14px;
         line-height: calc(20/14);
         margin-bottom: 25px;
