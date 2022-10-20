@@ -79,7 +79,8 @@ body.modal-open {
 .locations__button {
   font-family: inherit;
 
-  cursor: pointer;
+  cursor: url('../images/cursor--active.svg'), auto;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   margin: 0 auto;
   padding: 12px 34px;

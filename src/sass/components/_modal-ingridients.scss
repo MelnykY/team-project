@@ -34,7 +34,6 @@ body.modal-open {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 
   width: 280px;
   height: 990px;
@@ -181,15 +180,14 @@ body.modal-open {
   margin-bottom: 16px;
   padding: 0 10px;
 
-
   @media screen and (min-width: 768px) {
     width: 368px;
   }
 
-     &:hover,
-     &:focus {
-       border: 1px solid var(--accent-color);
-     }
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
 
 .ingrediens__input::placeholder {
@@ -206,7 +204,7 @@ body.modal-open {
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid var(--main-color);
   border-radius: 10px;
-  transition:  var(--animation);
+  transition: var(--animation);
   padding: 0 10px;
   padding-top: 11px;
 
@@ -214,10 +212,10 @@ body.modal-open {
     width: 368px;
   }
 
-    &:hover,
-    &:focus {
-      border: 1px solid var(--accent-color);
-    }
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
 }
 
 .ingrediens__textarea::placeholder {
@@ -251,21 +249,20 @@ body.modal-open {
   min-height: 42px;
   padding: 12px 34px;
 
-  cursor: pointer;
+  cursor: url('../images/cursor--active.svg'), auto;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
   color: var(--primary-text-color);
   background-color: var(--accent-color);
   border-radius: 10px;
 
   @media screen and (min-width: 768px) {
-      font-size: 14px;
-      line-height: 17px;
-    }
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
-
-
-.ingrediens__elipse--icecoffe{
+.ingrediens__elipse--icecoffe {
   width: 132px;
   height: 130.6px;
   border-radius: 50%;
@@ -273,7 +270,7 @@ body.modal-open {
   margin-bottom: 24px;
 }
 
-.ingrediens__text--icecoffe{
+.ingrediens__text--icecoffe {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,7 +287,7 @@ body.modal-open {
   }
 }
 
-.ingrediens_desk--icecoffe{
+.ingrediens_desk--icecoffe {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -305,10 +302,7 @@ body.modal-open {
   }
 }
 
-
-
-
-.ingrediens__elipse--milk{
+.ingrediens__elipse--milk {
   width: 132px;
   height: 130.6px;
   border-radius: 50%;

@@ -15,7 +15,7 @@
   opacity: 1;
   visibility: visible;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -193,8 +193,8 @@
 .ingredients__input:hover,
 .ingredients__input:focus,
 .ingredients__textarea:hover,
-.ingredients__textarea:focus{
-border: 1px solid var(--accent-color);
+.ingredients__textarea:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .ingredients__input::placeholder {
@@ -250,7 +250,8 @@ border: 1px solid var(--accent-color);
   width: 114px;
   min-height: 42px;
 
-  cursor: pointer;
+  cursor: url('../images/cursor--active.svg'), auto;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
   color: var(--primary-text-color);
   background-color: var(--accent-color);
