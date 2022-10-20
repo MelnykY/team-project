@@ -3,29 +3,30 @@
     display: flex;
     align-items: center;
     padding: 12px 20px 61px 20px;
-
+   
 
     @media screen and (min-width: 768px) {
         //  padding: 24px 32px; // updated
 
         /*ADDED*/
         // z-index: 10;
-        width: 100%;
-        position: fixed;
+        // width: 100%;
+        // position: fixed;
 
 
         min-width: 320px;
         //max-width: 480px;
-        width: 100%;
+        width: 768px;
         justify-content: space-between;
         align-items: center;
         margin-left: auto;
         margin-right: auto;
-        padding: 24px 20px;
+        padding: 20px 24px 6px 24px;
         background-color: #84a1789c;
     }
 
     @media screen and (min-width: 1200px) {
+    width: 1200px;
     padding: 8px 16px 0px 16px;
     }
 }

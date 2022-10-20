@@ -1,6 +1,6 @@
 .hero {
     /*ADDED*/
-    position: relative;
+  
 }
 
 
@@ -9,6 +9,9 @@
 .hero-container {
 
     height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 
     padding: 0px 20px 239px;
 
@@ -16,11 +19,13 @@
         //padding: 0px 20px 0px 41px;
 
         /*ADDED*/
-        padding: 104px 32px 14px;
+        width: 768px;
+        padding: 34px 32px 14px;
     }
 
     @media screen and (min-width: 1200px) {
-    padding: 118px 16px 65px 17px;
+        width: 1200px;
+    padding: 45px 16px 65px 17px;
     }
 }
 
@@ -171,6 +176,7 @@
 }
 
 .hero-desc-box {
+
     width: 151px;
 
     @media screen and (max-width: 767px) {
@@ -179,10 +185,20 @@
     }
 }
 
-.hero-img-plate {
-    // position: absolute;
-    // top: 0px;
+
+.hero-text-link:hover,
+.hero-text-link:focus{
+    background-color: rgba(10, 136, 23, 1);
+
+
+ 
+    background-color: rgba(10, 136, 23, 1);
+ 
+
+
+
 }
+
 
 
 
@@ -190,20 +206,35 @@
 
     @media screen and (min-width: 768px) {
         display: inline-block;
+        position: relative;
         font-size: 12px;
-        line-height: 140%;
+        line-height: calc(17/12);
 
         margin-bottom: 20px;
 
         color: var(--txt-color-light);
+
+        &::after{
+            position: absolute;
+            content: url('../images/hero/Arrow.svg');
+            height: 15px;
+            width: 40px;
+            transform: translateY(50%);
+            left: 0;
+            bottom: -20px;
+             @media screen and (min-width: 1200px) {
+                bottom: -32px;
+             }
+        }
     }
 
     @media screen and (min-width: 1200px) {
+        font-weight: 400;
     width: 200px;
     font-size: 14px;
-    line-height: 140%;
+    line-height: calc(20/14);
 
-    margin-bottom: 32px;
+    margin-bottom: 25px;
     }
 }
 
@@ -234,18 +265,17 @@
     pointer-events: none;
     z-index: 1;
     position: absolute;
-    bottom: -12.75%;
+    bottom: -53px;
     left: 50%;
-    transform: translate(-45%);
+    transform: translateX(-45%);
 
     @media screen and (min-width: 768px) {
         left: 70%;
-        bottom: -13.5%;
+        bottom: -56px;
     }
         
     @media screen and (min-width: 1200px) {
-    bottom: -15%;
-    left: 68%;
+    bottom: -100px;
     }
 }
 
@@ -262,17 +292,22 @@
 }*/
 .hero-img-points {
     /*ADDED*/
+    display: block;
     z-index: -2;
     pointer-events: none;
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
+
+    @media screen and (min-width: 1200px) {
+    bottom: -1px;
+    }
+
 }
 
 /*ADDED numbers*/
 
-.increasing-number {}
 
 .hero {
     &__chain-list {
